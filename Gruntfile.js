@@ -149,8 +149,11 @@ module.exports = function (grunt) {
                 relativeAssets: false
             },
             dist: {
-                options: {
-                    generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+                dist: {
+                    options: {
+                       config: '.compass.rb', // I made it hidden because other Yeoman configs are hidden, too.
+                       force: true
+                    }
                 }
             },
             server: {

@@ -1,0 +1,52 @@
+// imports
+@import "typography.scss";
+
+* {
+
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+     -ms-transition: all .25s ease-in-out;
+      -o-transition: all .25s ease-in-out;
+         transition: all .25s ease-in-out;
+
+	box-sizing: border-box;
+    
+}
+
+body 
+{
+	background-color: #eee;
+	border-top: 4px solid ;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+.projects 
+{
+	width: 100%;
+
+	.project
+	{
+		height: 110px;
+		animation: slide-in 1s backwards;
+	}
+
+	h2
+	{
+		height: 100px;
+		line-height: 100px;
+		display: inline-block;
+	}
+
+	a 
+	{
+		margin-left: 200px;
+		text-decoration: none;
+		color: #302c29;
+		padding: 1.5em;
+	}
+}
+
