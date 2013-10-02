@@ -14,6 +14,10 @@ router.configure({
 
 router.init();
 
+var $projects = $(".project");
+var $topborder = $('.top-border');
+var color = Math.floor(Math.random() * 255);
+var first, last, css;
 
 $(function() {
 
@@ -21,19 +25,14 @@ $(function() {
 
         $('body').addClass('ready');
 
-        var $projects = $(".project");
-        var $topborder = $('.top-border');
-        var color = Math.floor(Math.random() * 210);
-        var first, last, css;
-
         $(".project").each(function(i) {
-           // stagger the animations 0.2 seconds apart
-           css = 'animation-delay: ' + ((i + 6) / 8) + 's;';
+           // stagger the animations 0.25 seconds apart
+           css = 'animation-delay: ' + ((i + 3) / 4) + 's;';
            $(this).attr("style", css);
         });
 
         $(".projects h2").each(function(i) {
-            var hue = color + (i * 10);
+            var hue = color + (i * 13);
 
             if(i === 0 || i === $projects.length - 1) {
                 if(i === 0) {
@@ -44,7 +43,7 @@ $(function() {
                 }
             }
 
-            css = 'background: hsl(' + hue + ',65%,65%); color:hsl(' + hue + ',45%,55%);';
+            css = 'background: hsl(' + hue + ',75%,65%); color:hsl(' + hue + ',65%,55%);';
             $(this).attr("style", css);
         });
 
