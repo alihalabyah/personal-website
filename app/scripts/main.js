@@ -14,46 +14,46 @@ router.configure({
 
 router.init();
 
-var $section = $("section");
-var $projects = $(".projects");
-var color = Math.floor(Math.random() * 210);
-
-$(".project").each(function(i) {
-   // stagger the animations 0.2 seconds apart
-   var css = 'animation-delay:' + ((i + 6) / 8) + 's;';
-   $(this).attr("style", css);
-});
-
-$(".projects h2").each(function(i) {
-    var hue = color + (i * 10);
-    var css = 'background:hsl(' + hue + ',65%,65%); color:hsl(' + hue + ',45%,55%);';
-    $(this).attr("style", css);
-});
 
 $(function() {
-    $(window).load(function() {
 
+    $(document).ready(function() {
 
-                $(".filter").click(function() {
-                    var filter = $(this).text();
+        $('body').addClass('ready');
 
-                    $(".filter").removeClass("active-filter");
+        var $projects = $(".project");
+        var $topborder = $('.top-border');
+        var color = Math.floor(Math.random() * 210);
+        var first, last, css;
 
-                    $(".filter:contains(" + filter + ")").addClass("active-filter");
+        $(".project").each(function(i) {
+           // stagger the animations 0.2 seconds apart
+           css = 'animation-delay: ' + ((i + 6) / 8) + 's;';
+           $(this).attr("style", css);
+        });
 
-                    if ($section.hasClass("filter-" + filter)) {
-                        console.log("match!");
-                        $(".filter").removeClass("active-filter");
-                        $section.removeClass();
-                    }
-                    else {
-                        $section.removeClass().addClass("filtering filter-" + filter);
-                    }
-                });
+        $(".projects h2").each(function(i) {
+            var hue = color + (i * 10);
 
-                $("h1").click(function(){
-                    $(".filter").removeClass("active-filter");
-                    $section.removeClass();
-                });
-            });
+            if(i === 0 || i === $projects.length - 1) {
+                if(i === 0) {
+                    first = hue;
+                } 
+                else {
+                    last = hue;
+                }
+            }
+
+            css = 'background: hsl(' + hue + ',65%,65%); color:hsl(' + hue + ',45%,55%);';
+            $(this).attr("style", css);
+        });
+
+        css = 'background: linear-gradient(90deg, hsl(' + first + ',65%,65%), hsl(' + last + ',65%,65%)) hsl(' + first + ',65%,65%) repeat;';
+        $topborder.attr("style", css);
+
+    });
+
 });
+
+
+
