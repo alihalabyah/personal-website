@@ -1,1 +1,0 @@
-console.log("'Allo 'Allo!");var about=function(){console.log("about route")},contact=function(){console.log("contact route")},routes={"/about":about,"/contact":contact},router=Router(routes);router.configure({html5history:!0}),router.init();
