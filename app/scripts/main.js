@@ -16,6 +16,7 @@ router.init();
 
 var $projects = $(".project");
 var $topborder = $('.top-border');
+var $html = $('html');
 var color = Math.floor(Math.random() * 255);
 var first, last, css;
 
@@ -49,6 +50,14 @@ $(function() {
 
         css = 'background: linear-gradient(90deg, hsl(' + first + ',65%,65%), hsl(' + last + ',65%,65%)) hsl(' + first + ',65%,65%) repeat;';
         $topborder.attr("style", css);
+
+        // check for mobile devices to remove address bar..
+        if ($html.hasClass('touch')) {
+            setTimeout(function(){
+                // ..hide the address bar
+                window.scrollTo(0, 1);
+            }, 0);
+        };
 
     });
 

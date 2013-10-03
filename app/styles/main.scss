@@ -13,6 +13,7 @@ body
 {
 	background-color: #eee;
 	color: #302c29;
+	font-size: 1em;
 }
 
 a
@@ -29,7 +30,6 @@ a
 
 header
 {
-	width: 800px;
 	line-height: 1.6em;
 	font-size: 1.1em;
 	padding: 2.5em;
@@ -39,11 +39,11 @@ header
 
 	img
 	{
-		float: left;
+		display: block;
+		margin: auto;
 		width:7em;
 		height: 7em;
 		border-radius: 999px;
-		margin: 1em;
 		border: 3px solid #fff;
 		box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
 	}
@@ -71,7 +71,7 @@ a
 {	
 	opacity: 0;
 	
-	// KEEP IN POSITION REALTIVE!
+	// KEEP IN POSITION RELATIVE!
 	// Keeps it so that when h2 is hovered over
 	// it doesn't overlap the next one
 	.project
@@ -116,57 +116,84 @@ footer
 	padding: 1.5em;
 }
 
-@media (max-width: 50em) 
+@media (min-width: 49em)
 {
-
-header
-{
-	width: 90%;
-	padding: 1em;
-
-	img
+	header
 	{
-		float: none;
-		display: block;
-		margin: auto;
-	}
+		width: 800px;;
 
-	h4
-	{
-		font-size: 0.9em;
+		img
+		{
+			margin: 1em;
+			float: left;
+		}
 	}
-
 }
 
-.projects
+@media (max-width: 40em) 
 {
-	a
+
+	header
 	{
-		margin-left: 2em;
+		width: 90%;
 		padding: 1em;
+
+		img
+		{
+			float: none;
+			display: block;
+			margin: auto;
+		}
+
+		h4
+		{
+			font-size: 1em;
+		}
+
 	}
-}
+
+	.projects
+	{
+		a
+		{
+			margin-left: 6em;
+			padding: 1em;
+		}
+
+		h2
+		{
+			font-size: 1.3em;
+		}
+	}
 
 }
 
-@media (max-width: 50em) 
+
+@media (max-width: 25em) 
 {
 
-.projects
-{
-	a
+	.projects
 	{
-		margin-left: 1em;
-		padding: 1em;
+
+		h4
+		{
+			font-size: 0.8em;
+		}
+
+		a
+		{
+			margin-left: 1em;
+			padding: 1em;
+		}
+
+		h2
+		{
+			font-size: 1.3em;
+		}
 	}
 
-	h2
-	{
-		font-size: 1.3em;
-	}
 }
 
-}
 
 
 
