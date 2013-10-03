@@ -24,5 +24,10 @@ app.get('/contact', function(req,res) {
   res.sendfile('./dist/contact.html');
 });
 
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get('*', function(req, res){
+  res.sendfile('./dist/index.html');
+});
+
 app.listen(process.env.PORT || 3000);
 console.log('Listening on port 3000');

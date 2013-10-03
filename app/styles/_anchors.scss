@@ -1,0 +1,36 @@
+header a:hover
+{
+	transition: all .1s linear;
+	text-decoration: underline;
+}
+
+.github
+{
+	color: #569e3d;
+}
+
+header .github:hover
+{
+	color: lighten(#569e3d, 10%);
+}
+
+
+.twitter
+{
+	color: #0271bf;
+}
+
+header .twitter:hover
+{
+	color: lighten(#0271bf, 10%);
+}
+
+.linkedin
+{
+	color: #4875B4;
+}
+
+header .linkedin:hover
+{
+	color: lighten(#4875B4, 10%);
+}

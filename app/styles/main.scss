@@ -2,6 +2,7 @@
 @import "compass/reset";
 @import "typography.scss";
 @import "animations.scss";
+@import "anchors.scss";
 
 * {
 
@@ -70,6 +71,7 @@ a
 .projects 
 {	
 	opacity: 0;
+	transition: 0.5s;
 	
 	// KEEP IN POSITION RELATIVE!
 	// Keeps it so that when h2 is hovered over
@@ -94,7 +96,14 @@ a
 	h2:hover
 	{
 		transform: translate3d(6px, -7px, 0);
+		transition: .15s;
+	}
+
+	h2:active
+	{
+		transform: translate3d(0, 7px, 0);
 		transition: .1s;
+		-webkit-filter: blur(2px) grayscale (.5) opacity(0.8) hue-rotate(120deg);
 	}
 
 	a 
@@ -130,7 +139,7 @@ footer
 	}
 }
 
-@media (max-width: 40em) 
+@media (max-width: 49em) 
 {
 
 	header
@@ -156,7 +165,7 @@ footer
 	{
 		a
 		{
-			margin-left: 6em;
+			margin-left: 7em;
 			padding: 1em;
 		}
 
@@ -192,6 +201,30 @@ footer
 		}
 	}
 
+}
+
+@media (min-width: 75em) 
+{
+	
+	.projects
+	{
+
+		h4
+		{
+			font-size: 0.8em;
+		}
+
+		a
+		{
+			margin-left: 25em;
+			padding: 1.3em;
+		}
+
+		h2
+		{
+			font-size: 1.7em;
+		}
+	}
 }
 
 

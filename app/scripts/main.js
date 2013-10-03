@@ -44,7 +44,7 @@ $(function() {
                 }
             }
 
-            css = 'background: hsl(' + hue + ',75%,65%); color:hsl(' + hue + ',65%,55%);';
+            css = 'background: hsl(' + hue + ',95%,65%); color:hsl(' + hue + ',65%,55%);';
             $(this).attr("style", css);
         });
 
