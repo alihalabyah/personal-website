@@ -165,6 +165,44 @@ footer
 	{
 		a
 		{
+			margin-left: 10em;
+			padding: 1.3em;
+		}
+
+		h2
+		{
+			font-size: 1.5em;
+		}
+	}
+
+}
+
+@media (max-width: 35em) 
+{
+
+	header
+	{
+		width: 90%;
+		padding: 1em;
+
+		img
+		{
+			float: none;
+			display: block;
+			margin: auto;
+		}
+
+		h4
+		{
+			font-size: 1em;
+		}
+
+	}
+
+	.projects
+	{
+		a
+		{
 			margin-left: 7em;
 			padding: 1em;
 		}
