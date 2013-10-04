@@ -20,15 +20,17 @@ var $html = $('html');
 var color = Math.floor(Math.random() * 255);
 var first, last, css;
 
+console.log($html);
+
 $(function() {
 
     $(document).ready(function() {
 
         $('body').addClass('ready');
 
-        $(".project").each(function(i) {
+        $projects.each(function(i) {
            // stagger the animations 0.25 seconds apart
-           css = 'animation-delay: ' + ((i + 3) / 4) + 's;';
+           css = 'animation-delay: ' + (((i + 3) / 4) - 0.75) + 's;';
            $(this).attr("style", css);
         });
 
