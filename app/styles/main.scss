@@ -5,9 +5,7 @@
 @import "anchors.scss";
 
 * {
-
-	box-sizing: border-box;
-    
+	box-sizing: border-box;   
 }
 
 body 
@@ -83,10 +81,9 @@ a
 	.project
 	{	
 		position: relative;
-		-webkit-animation: bounceInLeft .5s ease-in 0s backwards;
-		-moz-animation: bounceInLeft .5s ease-in 0s backwards;
-		animation: bounceInLeft .5s ease-in 0s backwards;
-
+		-webkit-animation: bounceInLeft .5s ease-in 1s backwards;
+		-moz-animation: bounceInLeft .5s ease-in 1s backwards;
+		animation: bounceInLeft .5s ease-in 1s backwards;
 	}
 	
 	// bring the margin back so the left side doesn't show during
@@ -94,9 +91,8 @@ a
 	h2
 	{
 		display: inline-block;
-		left: 100%;
 		margin-left: -7px;
-		transition: .4s;
+		transition: .5s;
 		box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px;
 	}
 
@@ -110,8 +106,6 @@ a
 	{
 		transform: translate3d(0, 7px, 0);
 		transition: .1s;
-		filter: blur(2px) grayscale (.5) opacity(0.8);
-		-webkit-filter: blur(2px) grayscale (.5) opacity(0.8);
 	}
 
 	a 
