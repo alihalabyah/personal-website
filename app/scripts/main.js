@@ -34,7 +34,7 @@ $(function() {
         $projects.each(function(i) {
 
            // stagger the animations 0.25 seconds apart
-           delay = (((i + 3) / 4) - 0.75);
+           delay = (((i + 3) / 4) - 0.5);
            
            css = ' animation-delay: ' + delay + 's; -webkit-animation-delay: ' + delay + 's; -moz-animation-delay: ' + delay + 's; -o-animation-delay: ' + delay + 's;';
            $(this).attr("style", css);
