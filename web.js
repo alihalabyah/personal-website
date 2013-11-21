@@ -16,13 +16,18 @@ app.configure(function() {
 
 })
 
-app.get('/about', function(req,res) {
-  res.sendfile('./dist/about.html');
+// app.get('/about', function(req,res) {
+//   res.sendfile('./dist/about.html');
+// });
+
+app.get('/cv', function(req,res) {
+	console.log('cv file route...');
+  res.sendfile('./dist/connor_atherton_cv.pdf');
 });
 
-app.get('/contact', function(req,res) {
-  res.sendfile('./dist/contact.html');
-});
+// app.get('/contact', function(req,res) {
+//   res.sendfile('./dist/contact.html');
+// });
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
