@@ -6,10 +6,10 @@
 @import "tags.scss";
 
 * {
-	box-sizing: border-box;   
+	box-sizing: border-box;
 }
 
-body 
+body
 {
 	background-color: #eee;
 	color: #302c29;
@@ -65,27 +65,27 @@ header:after
 	content: "";
 }
 
-a 
+a
 {
 	text-decoration: none;
 }
 
-.projects 
-{	
+.projects
+{
 	// see here: http://stackoverflow.com/questions/18265846/css-animation-delay-not-working
 	opacity: 0;
-	
+
 	// KEEP IN POSITION RELATIVE!
 	// Keeps it so that when h2 is hovered over
 	// it doesn't overlap the next one
 	.project
-	{	
+	{
 		position: relative;
 		-webkit-animation: bounceInLeft .5s ease-in 1s backwards;
 		-moz-animation: bounceInLeft .5s ease-in 1s backwards;
 		animation: bounceInLeft .5s ease-in 1s backwards;
 	}
-	
+
 	// bring the margin back so the left side doesn't show during
 	// the transform
 	h2
@@ -108,8 +108,8 @@ a
 		transition: .1s;
 	}
 
-	a 
-	{	
+	a
+	{
 		display: block;
 		margin-left: 10em;
 		text-decoration: none;
@@ -117,7 +117,7 @@ a
 	}
 }
 
-.ready .projects 
+.ready .projects
 {
 	opacity: 1;
 }
@@ -148,8 +148,8 @@ footer
 		margin: 0.3em 0;
 	}
 
-	.tag:before { 
-		border: 13px solid transparent; 
+	.tag:before {
+		border: 13px solid transparent;
 		border-right-color: #fff;
 		top: 0;
 		left: -26px;
@@ -181,7 +181,7 @@ footer
 
 }
 
-@media (max-width: 49em) 
+@media (max-width: 49em)
 {
 
 	header
@@ -224,7 +224,7 @@ footer
 
 }
 
-@media (max-width: 35em) 
+@media (max-width: 35em)
 {
 
 	header
@@ -263,7 +263,7 @@ footer
 }
 
 
-@media (max-width: 25em) 
+@media (max-width: 25em)
 {
 
 	header
@@ -291,9 +291,9 @@ footer
 
 }
 
-@media (min-width: 85em) 
+@media (min-width: 85em)
 {
-	
+
 	.projects
 	{
 
