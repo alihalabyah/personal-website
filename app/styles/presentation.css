@@ -1,0 +1,129 @@
+html, body, #map-canvas, #map-canvas-2 {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+.full-slide {
+    display: inline-block;
+    width: 1300px;
+    height: 800px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 1.375rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+h5 {
+  font-size: 1.125rem; }
+
+h6 {
+  font-size: 1rem; }
+
+#streetheat h1 {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+.bold {
+    font-weight: 800;
+}
+strong {
+    color: rgba(121,210,169,1);
+}
+.authors {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+}
+.authors li {
+    display: inline-block;
+    width: 20%;
+    padding: 0;
+    float: left;
+    text-align: center;
+    line-height: 200px;
+}
+
+.heatmap-title:after {
+   content: "----------";
+   position: relative;
+   right: 328px;
+   top: 15px;
+   color: transparent;
+   width: 35px;
+   border-bottom: 4px solid #B83D3D;
+}
+
+canvas {
+    display:block;
+    margin:20px auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.list li: before {
+    content: "~";
+    color: blue;
+}
+
+.list li {
+    left: 20px;
+}
+
+.full-height {
+    position: absolute;
+    top: 40%;
+    max-width: 780px;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 1.8em;
+}
+    .demo header, .demo .map-demo, .demo #rss {
+        padding: 20px;
+    }
+    .demo header {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .demo header h1{
+        margin: auto;
+    }
+    .map-demo{
+        float: left;
+        width: 800px;
+        height: 500px;
+    }
+    .map-demo .key {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+#rss {
+    height: 600px;
+    width: 300px;
+    border-left: 1px solid #B83D3D;
+    float: right;
+    text-align: center;
+}

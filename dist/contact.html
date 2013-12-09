@@ -12,6 +12,13 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/db4badba.main.css">
         <script src="scripts/vendor/f7f27360.modernizr.js"></script>
+        <style>
+            canvas {
+              display:block;
+              margin:20px auto;
+              border:1px solid #bbb;
+            }
+        </style>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -23,8 +30,7 @@
           <h2>This is the contact route</h2>
         </div>
 
-
-        <script src="scripts/c59020eb.vendor.js"></script>
+        <canvas id="walker"></canvas>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -36,7 +42,8 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="scripts/5bb7fa00.main.js"></script>
+        <script src="scripts/walker.js"></script>
+        <script src="scripts/data.js"></script>
 
 </body>
 </html>
