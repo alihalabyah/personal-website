@@ -6,12 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>personal site</title>
+        <title>SCC306 Presentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <!-- build:css styles/impress.css -->
+        <link rel="stylesheet" href="bower_components/impress.js/css/impress-demo.css">
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/presentation.css -->
         <link rel="stylesheet" href="styles/presentation.css">
-        <link rel="stylesheet" href="styles/impress.css">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+        <!-- endbuild -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/f7f27360.modernizr.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
     </head>
@@ -62,7 +66,7 @@
             <div id="causes" class="step" data-x="3500" data-y="1000" data-z="-3000" data-rotate="300" data-scale="2">
                 <ul class="list">
                     <li>RSS feeds</li>
-                    <li>Roadwark markers</li>
+                    <li>Roadwork markers</li>
                     <li>Local heatmaps</li>
                 </ul>
             </div>
@@ -103,7 +107,7 @@
                 <h2>Services can use the data to see areas with frequent roadworks</h2>
             </div>
 
-            <div class="step full-slide demo" data-x="-6500" data-y="3000" data-scale="5" data-rotate="90">
+            <div class="demo step full-slide" data-x="-6500" data-y="3000" data-scale="5" data-rotate="90">
 
                 <header>
                     <h2 class="bold">StreetHeat</h2>
@@ -122,8 +126,8 @@
             </div>
 
             <div class="step" data-x="10000" data-y="-5750" data-z="-12000" data-rotate="360" data-rotate-x="-50" data-rotate-y="10" data-scale="1">
-                <h1 class="bold center">Questions?</h2>
-            </div>
+                <h1 class="bold center">Questions?
+            </h1></div>
 
             <div class="step" data-x="6000" data-y="-6000" data-z="-1000" data-rotate="145" data-scale="4">
                 <h2 class="bold">Technology used</h2>
@@ -138,10 +142,15 @@
 
         </div>
 
-        <script src="scripts/vendor/impress.js"></script>
+        <!-- build:js scripts/vendor/impress.js -->
+        <script src="bower_components/impress.js/js/impress.js"></script>
+        <!-- endbuild -->
 
 
-        <script src="scripts/presentation.js"></script>
+        <!-- build:js scripts/presentation.js -->
+        <script src="scripts/map.js"></script>
+        <script src="scripts/walker.js"></script>
+        <!-- endbuild -->
 
         <script>
             var impress = impress().init();

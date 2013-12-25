@@ -4,6 +4,7 @@
 @import "animations.scss";
 @import "anchors.scss";
 @import "tags.scss";
+@import "header.scss";
 
 * {
 	box-sizing: border-box;
@@ -28,47 +29,47 @@ a
 	width: 100%;
 }
 
-header
-{
-	line-height: 1.6em;
-	font-size: 1.1em;
-	padding: 2.5em;
-	display: block;
-	margin: auto;
-	-webkit-animation: fadeInDownBig .6s;
-	-moz-animation: fadeInDownBig .6s;
-	-ms-animation: fadeInDownBig .6s;
-	-o-animation: fadeInDownBig .6s;
-	animation: fadeInDownBig .6s;
+// header
+// {
+// 	line-height: 1.6em;
+// 	font-size: 1.1em;
+// 	padding: 2.5em;
+// 	display: block;
+// 	margin: auto;
+// 	-webkit-animation: fadeInDownBig .6s;
+// 	-moz-animation: fadeInDownBig .6s;
+// 	-ms-animation: fadeInDownBig .6s;
+// 	-o-animation: fadeInDownBig .6s;
+// 	animation: fadeInDownBig .6s;
 
-	img
-	{
-		display: block;
-		margin: auto;
-		width:7em;
-		height: 7em;
-		border-radius: 999px;
-		border: 3px solid #fff;
-	}
+// 	img
+// 	{
+// 		display: block;
+// 		margin: auto;
+// 		width:7em;
+// 		height: 7em;
+// 		border-radius: 999px;
+// 		border: 3px solid #fff;
+// 	}
 
-	h4
-	{
-		padding: 1em;
-	}
+// 	h4
+// 	{
+// 		padding: 1em;
+// 	}
 
-}
+// }
 
-header:after
-{
-	display: block;
-	clear: both;
-	content: "";
-}
+// header:after
+// {
+// 	display: block;
+// 	clear: both;
+// 	content: "";
+// }
 
-a
-{
-	text-decoration: none;
-}
+// a
+// {
+// 	text-decoration: none;
+// }
 
 .projects
 {
@@ -166,42 +167,8 @@ footer
 	}
 }
 
-@media (min-width: 49em)
-{
-	header
-	{
-		width: 800px;;
-
-		img
-		{
-			margin: 1em;
-			float: left;
-		}
-	}
-
-}
-
 @media (max-width: 49em)
 {
-
-	header
-	{
-		width: 90%;
-		padding: 1em;
-
-		img
-		{
-			float: none;
-			display: block;
-			margin: auto;
-		}
-
-		h4
-		{
-			font-size: 1em;
-		}
-
-	}
 
 	.projects
 	{
@@ -227,23 +194,20 @@ footer
 @media (max-width: 35em)
 {
 
-	header
-	{
-		width: 90%;
-		padding: 1em;
+	header {
+	  padding: 30px 0;
 
-		img
-		{
-			float: none;
-			display: block;
-			margin: auto;
-		}
+	  p {
+	    font-size: 40px;
+	  }
 
-		h4
-		{
-			font-size: em;
-		}
+	  h1 {
+	    font-size: 45px;
+	  }
 
+	  h2 {
+	    font-size: 20px;
+	  }
 	}
 
 	.projects
@@ -265,14 +229,6 @@ footer
 
 @media (max-width: 25em)
 {
-
-	header
-	{
-		h4
-		{
-			font-size: 0.8em;
-		}
-	}
 
 	.projects
 	{
