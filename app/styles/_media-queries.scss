@@ -1,0 +1,91 @@
+@media (max-width: 49em)
+{
+
+  .projects
+  {
+    a
+    {
+      margin-left: 8em;
+      padding: 1.3em;
+    }
+
+    h2
+    {
+      font-size: 1.5em;
+    }
+
+    .tags
+    {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 35em)
+{
+
+  .projects
+  {
+    a
+    {
+      margin-left: 7em;
+      padding: 1em;
+    }
+
+    h2
+    {
+      font-size: 1.3em;
+    }
+  }
+
+}
+
+
+@media (max-width: 25em)
+{
+
+  .projects
+  {
+
+    a
+    {
+      margin-left: 1em;
+      padding: 1em;
+    }
+
+    h2
+    {
+      font-size: 1.3em;
+    }
+  }
+
+}
+
+@media (min-width: 85em)
+{
+
+  .projects
+  {
+
+    h4
+    {
+      font-size: 1.1em;
+    }
+
+    a
+    {
+      margin-left: 20em;
+      padding: 1.3em;
+    }
+
+    h2
+    {
+      font-size: 1.7em;
+    }
+  }
+}
+
+
+
+
