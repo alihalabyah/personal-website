@@ -27,54 +27,14 @@ a
 	position: relative;
 	height: 6px;
 	width: 100%;
+	z-index: 5;
 }
-
-// header
-// {
-// 	line-height: 1.6em;
-// 	font-size: 1.1em;
-// 	padding: 2.5em;
-// 	display: block;
-// 	margin: auto;
-// 	-webkit-animation: fadeInDownBig .6s;
-// 	-moz-animation: fadeInDownBig .6s;
-// 	-ms-animation: fadeInDownBig .6s;
-// 	-o-animation: fadeInDownBig .6s;
-// 	animation: fadeInDownBig .6s;
-
-// 	img
-// 	{
-// 		display: block;
-// 		margin: auto;
-// 		width:7em;
-// 		height: 7em;
-// 		border-radius: 999px;
-// 		border: 3px solid #fff;
-// 	}
-
-// 	h4
-// 	{
-// 		padding: 1em;
-// 	}
-
-// }
-
-// header:after
-// {
-// 	display: block;
-// 	clear: both;
-// 	content: "";
-// }
-
-// a
-// {
-// 	text-decoration: none;
-// }
 
 .projects
 {
 	// see here: http://stackoverflow.com/questions/18265846/css-animation-delay-not-working
 	opacity: 0;
+	margin: 50px 0;
 
 	// KEEP IN POSITION RELATIVE!
 	// Keeps it so that when h2 is hovered over
@@ -130,6 +90,11 @@ footer
 
 @media (max-width: 67em)
 {
+
+	header {
+		height: 370px;
+	}
+
 	.tags
 	{
 		display: inline-block;
@@ -193,6 +158,10 @@ footer
 
 @media (max-width: 35em)
 {
+
+	header {
+		height: 300px;
+	}
 
 	header {
 	  padding: 30px 0;
