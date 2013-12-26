@@ -54,13 +54,17 @@ var container;
         renderer.setSize( window.innerWidth, $canvasContainer.innerHeight() );
         container.appendChild( renderer.domElement );
 
-        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-        document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-        document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-
         //
 
-        window.addEventListener( 'resize', onWindowResize, false );
+        if(Modernizr.touch) {
+          $canvasContainer[0].addEventListener( 'resize', onWindowResize, false );
+        }
+        else {
+          document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+          document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+          document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+          window.addEventListener( 'resize', onWindowResize, false );
+        }
 
       }
 
