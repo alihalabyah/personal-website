@@ -6,11 +6,9 @@ var first, last, css, delay;
 
 $(function() {
 
-    $(document).ready(function() {
-
         // when the document loads
         // the animations start. Waiting until the dom is
-        // ready stops the .project from 'jittering' before 
+        // ready stops the .project from 'jittering' before
         // animating
         $('body').addClass('ready');
 
@@ -19,7 +17,7 @@ $(function() {
 
            // stagger the animations 0.25 seconds apart
            delay = (((i + 3) / 4) - 0.5);
-           
+
            css = ' animation-delay: ' + delay + 's; -webkit-animation-delay: ' + delay + 's; -moz-animation-delay: ' + delay + 's; -o-animation-delay: ' + delay + 's;';
            $(this).attr("style", css);
 
@@ -32,7 +30,7 @@ $(function() {
             if(i === 0 || i === $projects.length - 1) {
                 if(i === 0) {
                     first = hue;
-                } 
+                }
                 else {
                     last = hue;
                 }
@@ -54,7 +52,9 @@ $(function() {
             }, 0);
         };
 
-    });
+        $('.wordy2').WordySwitch({
+            words: ['the web', 'rubix cubes', 'football']
+        });
 
 });
 
