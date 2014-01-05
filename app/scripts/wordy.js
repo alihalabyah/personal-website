@@ -4,10 +4,9 @@
       document = window.document,
       defaults = {
         hover: "true",
-        hoverSpeed: 1000 / 4
+        hoverSpeed: 1000 / 3
       },
-      ids = 0,
-      wordies = [];
+      ids = 0;
 
   function WordySwitch( element, options ) {
     // store both the DOM element
@@ -44,10 +43,12 @@
     this.normalTimer.call(this);
 
     // when hovered over replace words faster
+    this.hoverTimer.bind(WordySwitch);
     this.$element.on('mouseenter', {context: this}, this.hoverTimer);
 
     // when mouse exits slow down the replacements a
     // and cancel the hover timer
+    this.hoverExit.bind(WordySwitch);
     this.$element.on('mouseleave', {context: this}, this.hoverExit);
 
   }
@@ -64,6 +65,7 @@
   }
 
   WordySwitch.prototype.hoverTimer = function(evt) {
+    console.log(this);
     var self = evt.data.context;
 
     // cancel the normal timer
@@ -79,8 +81,7 @@
   }
 
   WordySwitch.prototype.hoverExit = function(evt) {
-    console.log(self)
-
+    console.log(this);
     // clear the hover timer
     clearTimeout(self._hoverTimerId);
 

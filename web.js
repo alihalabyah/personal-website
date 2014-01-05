@@ -17,12 +17,6 @@ app.configure(function() {
 
 })
 
-// app.get('/*.js', function(req, res){
-//   res.setHeader('Content-Type', 'text/javascript');
-//   res.setHeader('Content-Length', Buffer.byteLength(body));
-//   res.end(body);
-// });
-
 // // dev routes
 // if (app.get('env') === 'development') {
 
@@ -47,6 +41,11 @@ app.configure(function() {
 //     res.sendfile('./app/presentation.html');
 //   });
 
+//   app.get('/he-man', function(req, res) {
+//     console.log('he man route');
+//     res.sendfile('./app/heman.html');
+//   })
+
 //   //The 404 Route (ALWAYS Keep this as the last route)
 //   app.get('*', function(req, res){
 //     res.sendfile('./app/index.html');
@@ -59,18 +58,16 @@ app.get('/about', function(req,res) {
 });
 
 app.get('/cv', function(req,res) {
-	console.log('cv file route...');
   res.sendfile('./dist/connor_atherton_cv.pdf');
 });
 
 app.get('/presentation', function(req,res) {
-  console.log('306 presentation route...');
   res.sendfile('./dist/presentation.html');
 });
 
-// css + js
-// app.use("/styles", express.static(__dirname + '/styles'));
-// app.use("/scripts", express.static(__dirname + '/scripts'));
+app.get('/I-said-hey', function(req, res) {
+  res.sendfile('./dist/heman.html');
+})
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){

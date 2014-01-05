@@ -7,7 +7,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
@@ -123,8 +123,8 @@ module.exports = function (grunt) {
             dist: {
                 dist: {
                     options: {
-                       config: '.compass.rb', // I made it hidden because other Yeoman configs are hidden, too.
-                       force: true
+                        config: '.compass.rb', // I made it hidden because other Yeoman configs are hidden, too.
+                        force: true
                     }
                 }
             },
@@ -163,9 +163,8 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>'
             },
             html: [
-                    '<%= yeoman.app %>/index.html',
-                    '<%= yeoman.app %>/presentation.html'
-                  ]
+                '<%= yeoman.app %>/{,*/}*.html'
+            ]
         },
         usemin: {
             options: {
@@ -197,11 +196,11 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    removeCommentsFromCDATA: true,
+                    // removeCommentsFromCDATA: true,
                     // https://github.com/yeoman/grunt-usemin/issues/44
                     //collapseWhitespace: true,
                     collapseBooleanAttributes: true,
-                    removeAttributeQuotes: true,
+                    // removeAttributeQuotes: true,
                     removeRedundantAttributes: true,
                     useShortDoctype: true,
                     removeEmptyAttributes: true,
@@ -268,7 +267,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('server', function (target) {
+    grunt.registerTask('server', function(target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
         }
