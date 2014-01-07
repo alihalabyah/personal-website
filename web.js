@@ -12,7 +12,6 @@ app.configure(function() {
   app.use( express.methodOverride() );
 
   // user for serving static files
-  // app.use(express.logger('dev'));
   app.use(express.static(__dirname + "/dist"));
 
 })
@@ -46,6 +45,11 @@ app.configure(function() {
 //     res.sendfile('./app/heman.html');
 //   })
 
+//   app.get('/pretty-rain', function(req, res) {
+//     console.log('rainroute');
+//     res.sendfile('./app/rainfall.html');
+//   })
+
 //   //The 404 Route (ALWAYS Keep this as the last route)
 //   app.get('*', function(req, res){
 //     res.sendfile('./app/index.html');
@@ -67,6 +71,11 @@ app.get('/presentation', function(req,res) {
 
 app.get('/I-said-hey', function(req, res) {
   res.sendfile('./dist/heman.html');
+})
+
+app.get('/pretty-rain', function(req, res) {
+  console.log('rainroute');
+  res.sendfile('./dist/rainfall.html');
 })
 
 //The 404 Route (ALWAYS Keep this as the last route)
