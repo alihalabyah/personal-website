@@ -1,17 +1,18 @@
 var gzippo = require('gzippo'),
-	  express = require('express'),
-	  app = express();
+    express = require('express'),
+    app = express();
 
 // configure server
 app.configure(function() {
 
-	// parses request body and populates request.body
-	app.use( express.bodyParser() );
+  // parses request body and populates request.body
+  app.use( express.bodyParser() );
 
   // check for http overides
   app.use( express.methodOverride() );
 
   // user for serving static files
+  // app.use(express.logger('dev'));
   app.use(express.static(__dirname + "/dist"));
 
 })
@@ -28,7 +29,7 @@ app.configure(function() {
 
 //   app.get('/cv', function(req,res) {
 //     console.log('cv file route...');
-//     res.sendfile('./app/connor_atherton_cv.pdf');
+//     res.sendfile('./app/cv.pdf');
 //   });
 
 //   app.get('/contact', function(req,res) {
@@ -45,11 +46,6 @@ app.configure(function() {
 //     res.sendfile('./app/heman.html');
 //   })
 
-//   app.get('/pretty-rain', function(req, res) {
-//     console.log('rainroute');
-//     res.sendfile('./app/rainfall.html');
-//   })
-
 //   //The 404 Route (ALWAYS Keep this as the last route)
 //   app.get('*', function(req, res){
 //     res.sendfile('./app/index.html');
@@ -62,7 +58,7 @@ app.get('/about', function(req,res) {
 });
 
 app.get('/cv', function(req,res) {
-  res.sendfile('./dist/connor_atherton_cv.pdf');
+  res.sendfile('./dist/cv.pdf');
 });
 
 app.get('/presentation', function(req,res) {
@@ -71,11 +67,6 @@ app.get('/presentation', function(req,res) {
 
 app.get('/I-said-hey', function(req, res) {
   res.sendfile('./dist/heman.html');
-})
-
-app.get('/pretty-rain', function(req, res) {
-  console.log('rainroute');
-  res.sendfile('./dist/rainfall.html');
 })
 
 //The 404 Route (ALWAYS Keep this as the last route)
