@@ -69,6 +69,10 @@ app.get('/I-said-hey', function(req, res) {
   res.sendfile('./dist/heman.html');
 })
 
+app.get('/pretty-rain', function(req, res) {
+  res.sendfile('./dist/rainfall.html');
+})
+
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
   res.sendfile('./dist/index.html');
