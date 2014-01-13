@@ -46,6 +46,11 @@ app.configure(function() {
 //     res.sendfile('./app/heman.html');
 //   })
 
+//   app.get('/vim-cheatsheet', function(req, res) {
+//     console.log('vim route');
+//     res.sendfile('./app/vim.html');
+//   })
+
 //   //The 404 Route (ALWAYS Keep this as the last route)
 //   app.get('*', function(req, res){
 //     res.sendfile('./app/index.html');
@@ -71,6 +76,11 @@ app.get('/I-said-hey', function(req, res) {
 
 app.get('/pretty-rain', function(req, res) {
   res.sendfile('./dist/rainfall.html');
+})
+
+app.get('/vim-cheatsheet', function(req, res) {
+  console.log('vim route');
+  res.sendfile('./dist/vim.html');
 })
 
 //The 404 Route (ALWAYS Keep this as the last route)
