@@ -17,62 +17,8 @@ app.configure(function() {
 
 })
 
-// // dev routes
-if (app.get('env') === 'development') {
-
-  // set static file directory
-  app.use(gzippo.staticGzip(__dirname + "/app"));
-
-  app.get('/about', function(req,res) {
-    res.sendfile('./app/playground.html');
-  });
-
-  app.get('/cv', function(req,res) {
-    console.log('cv file route...');
-    res.sendfile('./app/cv.pdf');
-  });
-
-  app.get('/contact', function(req,res) {
-    res.sendfile('./app/contact.html');
-  });
-
-  app.get('/presentation', function(req,res) {
-    console.log('306 presentation route...');
-    res.sendfile('./app/presentation.html');
-  });
-
-  app.get('/he-man', function(req, res) {
-    console.log('he man route');
-    res.sendfile('./app/heman.html');
-  })
-
-  app.get('/vim-cheatsheet', function(req, res) {
-    console.log('vim route');
-    res.sendfile('./app/vim.html');
-  })
-
-  app.get('/spotlight', function(req, res) {
-    console.log('spotlight route');
-    res.sendfile('./app/spotlight.html');
-  })
-
-  //The 404 Route (ALWAYS Keep this as the last route)
-  app.get('*', function(req, res){
-    res.sendfile('./app/index.html');
-  });
-
-}
-
-app.get('/about', function(req,res) {
-  res.sendfile('./dist/about.html');
-});
-
 app.get('/cv', function(req,res) {
   res.sendfile('./dist/cv.pdf');
-});
-
-app.get('/presentation', function(req,res) {
-  res.sendfile('./dist/presentation.html');
 });
 
 app.get('/I-said-hey', function(req, res) {

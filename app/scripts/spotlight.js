@@ -1,4 +1,13 @@
-(function (window, document) {
+/*
+ * Spotlight.js
+ *
+ * Copyright 2014, Connor Atherton - http://connoratherton.com/
+ * Released under the MIT Licence
+ * http://opensource.org/licenses/MIT
+ *
+ * Github:  http://github.com/ConnorAtherton/Spotlight.js/
+ */
+(function (window, document, undefined) {
   'use strict';
 
   var Spotlight  = Spotlight || function (elems, opts, fn) {
@@ -71,6 +80,11 @@
               utils.style.remove(elem, rule);
             }
           }
+        },
+        extractAll: function (elem) {
+          var css = window.getComputedStyle(elem),
+              styleObj = {};
+          console.log(css);
         }
       },
       checks: {
@@ -109,7 +123,8 @@
       },
       remove: function () {
         document.body.removeChild(cache.overlay);
-        cache.callback.call(this);
+        if(cache.callback)
+          cache.callback.call(this);
       },
       styles: {
         'backgroundColor': options.overlayColor,
@@ -254,4 +269,4 @@
   // Expose Spotlight to the global object
   this.Spotlight = Spotlight;
 
-}).call(this, window, document, undefined)
+}).call(this, window, document)

@@ -44,18 +44,6 @@ $(function() {
         css = 'background: linear-gradient(90deg, hsl(' + first + ',65%,65%), hsl(' + last + ',65%,65%)) hsl(' + first + ',65%,65%) repeat;';
         $topborder.attr("style", css);
 
-        // check for mobile devices to remove address bar..
-        if ($html.hasClass('touch')) {
-            setTimeout(function(){
-                // ..hide the address bar
-                window.scrollTo(0, 1);
-            }, 0);
-        };
-
-        $('.wordy2').WordySwitch({
-            words: ['the web', 'rubix cubes', 'football']
-        });
-
 });
 
 

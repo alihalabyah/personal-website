@@ -5,11 +5,10 @@ var $container,
 
 $(document).ready(function(){
   $container = $('.container');
-  flash();
-  timer = new Date();
+  hemanFlash();
 })
 
-function flash(){
+function hemanFlash (){
   $container
     .animate({backgroundColor: '#FF0000'}, 200)
     .animate({backgroundColor: '#FF9500'}, 200)
@@ -17,24 +16,5 @@ function flash(){
     .animate({backgroundColor: '#74E600'}, 200)
     .animate({backgroundColor: '#1049A9'}, 200)
     .animate({backgroundColor: '#4212AF'}, 200)
-    .animate({backgroundColor: '#A600A6'}, 200, function() { flash() });
+    .animate({backgroundColor: '#A600A6'}, 200, function() { hemanFlash() });
 }
-
-// window.onbeforeunload = function() {
-//   stopTimer = new Date();
-//   var time = stopTimer - timer;
-//   console.log('on before unload
-//     ')
-
-//   return "You lasted" + time.getSeconds() ;
-
-//   alert( "You lasted" + time.getSeconds() );
-// };
-
-// // function showWhite(){
-// //   $(".white").fadeIn("fast");
-// // }
-
-// // function hideWhite(){
-// //   $(".white").fadeOut("fast");
-// // }

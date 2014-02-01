@@ -1,10 +1,10 @@
 // imports
 @import "compass/reset";
-@import "typography.scss";
-@import "animations.scss";
-@import "anchors.scss";
-@import "tags.scss";
-@import "header.scss";
+@import "partials/typography.scss";
+@import "partials/animations.scss";
+@import "partials/anchors.scss";
+@import "partials/tags.scss";
+@import "partials/header.scss";
 
 * {
 	box-sizing: border-box;
