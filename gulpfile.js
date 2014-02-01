@@ -128,7 +128,7 @@ gulp.task('clean', function() {
 gulp.task('copy', function() {
   // copy favicon
   gulp.src('app/favicon.png')
-    .pipe(gulp.dest('dest/favicon.png'));
+    .pipe(gulp.dest('dist/'));
 
   // copy html files
   gulp.src(paths.html)
