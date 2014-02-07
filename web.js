@@ -21,6 +21,10 @@ app.get('/cv', function(req,res) {
   res.sendfile('./dist/cv.pdf');
 });
 
+app.get('/terminal', function(req,res) {
+  res.sendfile('./dist/terminal.html');
+});
+
 app.get('/I-said-hey', function(req, res) {
   res.sendfile('./dist/heman.html');
 })
