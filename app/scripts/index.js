@@ -1,9 +1,3 @@
-var $projects = $(".project");
-var $topborder = $('.top-border');
-var $html = $('html');
-var color = Math.floor(Math.random() * 255);
-var first, last, css, delay;
-
 /*==========================================
 =            WordySwitch plugin            =
 ==========================================*/
@@ -124,6 +118,12 @@ var first, last, css, delay;
 
 $(function() {
 
+  var $projects = $(".project");
+  var $topborder = $('.top-border');
+  var $html = $('html');
+  var color = Math.floor(Math.random() * 255);
+  var first, last, css, delay;
+
         // when the document loads
         // the animations start. Waiting until the dom is
         // ready stops the .project from 'jittering' before
@@ -163,7 +163,7 @@ $(function() {
         $topborder.attr("style", css);
 
         $('.wordy').WordySwitch({
-            words: ['football', 'rubix cubes', 'flapjacks', 'my Mac', 'stationary']
+            words: ['football', 'rubix cubes', 'flapjacks', 'my Mac', 'stationary', 'iTerm']
         });
 
 });
