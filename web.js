@@ -34,8 +34,11 @@ app.get('/pretty-rain', function(req, res) {
 })
 
 app.get('/vim-cheatsheet', function(req, res) {
-  console.log('vim route');
   res.sendfile('./dist/vim.html');
+})
+
+app.get('/typewriter', function(req, res) {
+  res.sendfile('./dist/typewriter.html');
 })
 
 //The 404 Route (ALWAYS Keep this as the last route)

@@ -4,7 +4,8 @@
   "dependencies": {
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "normalize-css": "~2.1.3"
+    "normalize-css": "~2.1.3",
+    "highlight.js": "git://github.com/isagalaev/highlight.js.git#~7.0.1"
   },
   "devDependencies": {}
 }
