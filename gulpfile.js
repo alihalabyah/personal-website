@@ -25,10 +25,8 @@ var paths = {
   scripts: ['app/scripts/*.js'],
   scriptsVendor: [
                   'app/bower_components/modernizr/modernizr.js',
-                  'app/bower_components/jquery.terminal/js/jquery.mousewheel-min.js',
-                  'app/bower_components/jquery.terminal/js/jquery.terminal-min.js',
+                  'app/bower_components/skrollr/src/skrollr.js',
                   'app/bower_components/jquery-waypoints/waypoints.min.js',
-                  'app/bower_components/highlight.js/src/highlight.js',
                   'app/scripts/vendor'
                  ],
   images: ['app/images/*'],

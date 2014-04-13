@@ -41,6 +41,10 @@ app.get('/typewriter', function(req, res) {
   res.sendfile('./dist/typewriter.html');
 })
 
+app.get('/mother', function(req, res) {
+  res.sendfile('./dist/mother.html');
+})
+
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
   res.sendfile('./dist/index.html');
