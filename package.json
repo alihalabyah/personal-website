@@ -3,9 +3,7 @@
   "description": "This is just my personal site. It's not a big deal.",
   "version": "0.0.0",
   "dependencies": {
-    "gzippo": "~0.2.0",
-    "express": "~3.4.0",
-    "path": "~0.4.9"
+    "express": "~4.0.0",
   },
   "devDependencies": {
     "gulp-util": "~2.2.13",
@@ -25,10 +23,9 @@
     "gulp-imagemin": "~0.1.4",
     "gulp-mocha": "~0.4.1",
     "gulp-compass": "~1.1.0",
-    "jshint-stylish": "~0.1.5",
-    "connect-livereload": "~0.3.2"
+    "jshint-stylish": "~0.1.5"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }

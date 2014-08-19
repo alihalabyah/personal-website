@@ -17,15 +17,14 @@ var gulp = require('gulp'),
     lr = require('tiny-lr')(),
     concat = require('gulp-concat');
 
-var EXPRESS_PORT = 4000,
-    EXPRESS_ROOT = __dirname + '/dist',
-    LIVERELOAD_PORT = 35729;
+var EXPRESS_PORT = 4000;
+var EXPRESS_ROOT = __dirname + '/dist';
+var LIVERELOAD_PORT = 35729;
 
 var paths = {
   scripts: ['app/scripts/*.js'],
   scriptsVendor: [
                   'app/bower_components/modernizr/modernizr.js',
-                  'app/bower_components/skrollr/src/skrollr.js',
                   'app/bower_components/jquery-waypoints/waypoints.min.js',
                   'app/scripts/vendor'
                  ],
@@ -40,15 +39,6 @@ var destinations = {
   images: 'dist/images',
   html: 'dist',
   styles: 'dist/styles'
-}
-
-var individualConcat = {
-  index: ['app/scripts/main.js'],
-  heman: ['app/scripts/heman.js'],
-  rainfall: ['app/scripts/rain.js'],
-  //vim: ['app/scripts/vim.js'],
-  spotlight: ['app/scripts/spotlight.js'],
-  walker: ['app/scripts/walker.js']
 }
 
 function startLivereload() {
@@ -86,8 +76,8 @@ gulp.task('sass', function() {
 // Minify and copy all JavaScript
 gulp.task('scripts', function () {
   return gulp.src(paths.scripts)
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter(stylish))
+    // .pipe(jshint('.jshintrc'))
+    // .pipe(jshint.reporter(stylish))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(destinations.scripts))
@@ -100,8 +90,7 @@ gulp.task('scripts-vendor', function () {
     .pipe(uglify())
     .pipe(concat("vendor.js"))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(destinations.scriptsVendor))
-    .pipe(notify({ message: 'ScriptsVendor task complete' }));
+    .pipe(gulp.dest(destinations.scriptsVendor));
 });
 
 // Copy all static images
