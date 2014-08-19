@@ -3,7 +3,7 @@
   "description": "This is just my personal site. It's not a big deal.",
   "version": "0.0.0",
   "dependencies": {
-    "express": "~4.0.0",
+    "express": "~4.0.0"
   },
   "devDependencies": {
     "gulp-util": "~2.2.13",
