@@ -1,0 +1,66 @@
+extends ./common/layout
+
+block head
+  link(rel="stylesheet" href="css/vim.css")
+
+block content
+  #container
+    header
+        h1 My Vim Cheat Sheet
+        p
+          | I'm trying to learn vim so every time I learn a new command I'll post it here.
+    section
+      h2 Command to insert mode
+      .commands
+        .command
+          .keystroke  a
+          .description
+            | Append text after cursor position
+        .command
+          .keystroke  A
+          .description
+            | Append text to end of current line
+        .command
+          .keystroke  i
+          .description
+            | Insert text before cursor position
+        .command
+          .keystroke  I
+          .description
+            | Insert text at the start of the current line
+        .command
+          .keystroke  0
+          .description
+            | Move cursor to beginning of current line
+        .command
+          .keystroke  $
+          .description
+            | Move cursor to end of current line
+        .command
+          .keystroke  w
+          .description
+            | Move cursor forward one word
+        .command
+          .keystroke  b
+          .description
+            | Move cursor back one word
+    section
+      h2 Command mode
+      .commands
+        .command
+          .keystroke  k
+          .description
+            | Move cursor up one line
+        .command
+          .keystroke  j
+          .description
+            | Move cursor down one line.
+        .command
+          .keystroke  h
+          .description
+            | Move cursor left one character
+        .command
+          .keystroke  l
+          .description
+            | Move cursor right one character
+    footer

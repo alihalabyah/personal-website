@@ -1,0 +1,79 @@
+extends ./common/layout
+
+block head
+  link(href='http://fonts.googleapis.com/css?family=Lato:300,700|Cutive+Mono|Inconsolata' rel='stylesheet' type='text/css')
+  link(rel="stylesheet" href="css/typewriter.css")
+
+block content
+  .content
+      h1.fadeInDown.animated
+          span TypeWriter
+          |  is an easy way to type out text on a page.
+        .example.example-1
+          h2 Letter by letter, fixed interval.
+          pre
+            code.language-javascript
+              | var tw = new TypeWriter('.example-1-output', {
+              |   text: 'It is a pity my intervals are the same each time.',
+              |   interval: 100
+              | });
+              | tw.type();
+          .example-1-output.typewriter
+        .example.example-2
+          h2 Letter by letter, random natural human interval.
+          pre
+            code.language-javascript
+              | var tw = new TypeWriter('.example-2-output', {
+              |   text: 'I also love printing text. ' +
+              |         'My intervals are randomised to ' +
+              |         'look like a human is typing.',
+              |   interval: 'human'
+              | });
+              | tw.type();
+          .example-2-output.typewriter
+        .example.example-3
+          h2 Word by word, fixed interval.
+          pre
+            code.language-javascript
+              | var tw = new TypeWriter('.example-3-output', {
+              |   text: 'I LOVE PRINTING THE MOST!',
+              |   interval: 500,
+              |   words: true
+              | });
+              | tw.type();
+          .example-3-output.typewriter
+        .example.example-4
+          h2 Letter by letter, random natural human interval with bounds specified and a callback on completion.
+          pre
+            code.language-javascript
+              | var tw = new TypeWriter('.example-4-output', {
+              |   text: 'Upper and lower bounds.',
+              |   interval: 'human',
+              |   lowerBound: 30,
+              |   upperBound: 130
+              | });
+              | tw.type(function() {
+              |   console.log('Finished typing now');
+              | });
+          .example-4-output.typewriter
+        .example
+          h2 All options
+          pre
+            code.language-javascript
+              | var tw = new TypeWriter('selector', {
+              |   text: 'The text to write into the selector',
+              |   words: false, // Optional. Defaults to false.
+              |   interval: 'human' || 300, // Optional. Defaults to human.
+              |   lowerBound: 30 || null, // Optional. Defaults to 30ms
+              |   upperBound: 200 || null // Optional. Defaults to 200ms
+              | });
+
+      footer
+        | Code is all on 
+        a(href='https://github.com/ConnorAtherton/TypeWriter') GitHub
+        |. Go check it out.
+
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='js/vendor.min.js')
+  script(src='js/typewriter.min.js')
+  script(src='js/typewriterPage.min.js')

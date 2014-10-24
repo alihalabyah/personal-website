@@ -1,142 +1,93 @@
-var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
-    jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish');
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    clean = require('gulp-clean'),
-    concat = require('gulp-concat'),
-    compass = require('gulp-compass'),
-    mocha = require('gulp-mocha');
-    notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
-    livereload = require('gulp-livereload'),
-    lr = require('tiny-lr')(),
-    concat = require('gulp-concat');
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
+var config = require('./config/build.config');
 
-var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = __dirname + '/dist';
-var LIVERELOAD_PORT = 35729;
-
-var paths = {
-  scripts: ['app/scripts/*.js'],
-  scriptsVendor: [
-                  'app/bower_components/modernizr/modernizr.js',
-                  'app/bower_components/jquery-waypoints/waypoints.min.js',
-                  'app/scripts/vendor'
-                 ],
-  images: ['app/images/*'],
-  html: ['app/*.html'],
-  styles: ['app/styles/*.scss']
-};
-
-var destinations = {
-  scripts: 'dist/scripts',
-  scriptsVendor: 'dist/scripts/vendor',
-  images: 'dist/images',
-  html: 'dist',
-  styles: 'dist/styles'
-}
-
-function startLivereload() {
-  lr.listen(LIVERELOAD_PORT);
-}
-
-function startExpress() {
-  var express = require('express');
-  var app = express();
-  app.use(require('connect-livereload')());
-  app.use(express.static(EXPRESS_ROOT));
-  app.listen(EXPRESS_PORT);
-}
-
-function notifyLivereload(event) {
-  // `gulp.watch()` events provide an absolute path
-  // so we need to make it relative to the server root
-  var fileName = require('path').relative(EXPRESS_ROOT, event.path);
-  lr.changed({
-    body: {
-      files: [fileName]
-    }
-  });
-}
-
-gulp.task('sass', function() {
-  return gulp.src(paths.styles)
-    .pipe(sass({ unixNewlines: true, compass: true, style: 'compressed' }))
-    .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest(destinations.styles))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(notify({ message: 'Styles task complete' }));
-});
-
-// Minify and copy all JavaScript
-gulp.task('scripts', function () {
-  return gulp.src(paths.scripts)
-    // .pipe(jshint('.jshintrc'))
-    // .pipe(jshint.reporter(stylish))
-    .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(destinations.scripts))
-    .pipe(notify({ message: 'Scripts task complete' }));
-});
-
-// Minify and copy all JavaScript
-gulp.task('scripts-vendor', function () {
-  return gulp.src(paths.scriptsVendor)
-    .pipe(uglify())
-    .pipe(concat("vendor.js"))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(destinations.scriptsVendor));
-});
-
-// Copy all static images
-gulp.task('images', function () {
- return gulp.src(paths.images)
-    .pipe(imagemin({optimizationLevel: 5, progressive: true, interlaced: true }))
-    .pipe(gulp.dest(destinations.images));
-});
-
-// Rerun the task when a file changes
-gulp.task('watch', function () {
-  gulp.watch(paths.scripts, ['scripts']);
-  gulp.watch(['app/styles/**/*.scss'], ['sass']);
-  gulp.watch(paths.images, ['images']);
-  gulp.watch(paths.html, ['copy']);
+gulp.task('js:lint', function() {
+  return gulp
+    .src('app/**/*.js')
+    .pipe(plugins.jshint())
+    .pipe(plugins.jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('clean', function() {
-  return gulp.src(['dist'], {read: false})
-    .pipe(clean());
+  gulp
+    .src('./dist/*', { read: false })
+    .pipe(plugins.clean());
 });
 
-// Copy all static assets
-gulp.task('copy', function() {
-  // copy favicon
-  gulp.src('app/favicon.png')
+gulp.task('copy:assets', function() {
+  gulp
+    .src('app/assets/**/*')
+    .pipe(gulp.dest('dist/assets/'));
+});
+
+gulp.task('copy:jade', function() {
+  gulp
+    .src('app/**/*.jade')
+    // .pipe(plugins.jade()) // let express handle this for now
     .pipe(gulp.dest('dist/'));
+})
 
-  // copy html files
-  gulp.src(paths.html)
-    .pipe(gulp.dest(destinations.html));
-
-  // copy hidden files e.g. htaccess
-  gulp.src('app/.*')
-    .pipe(gulp.dest(destinations.html));
+gulp.task('js:app', function () {
+   gulp
+    .src('./app/js/*.js')
+    .pipe(plugins.uglify())
+    .pipe(plugins.rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./dist/js/'));
 });
 
-gulp.task('mocha', function () {
-  gulp.src('./test/*.js')
-    .pipe(mocha({ reporter: 'list' }));
+gulp.task('js:vendor', function() {
+  gulp
+    .src(config.vendor.js)
+    .pipe(plugins.uglify())
+    .pipe(plugins.concat('vendor.js'))
+    .pipe(plugins.rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./dist/js/'));
 });
 
-// The default task (called when you run `gulp` from cli)
-gulp.task('default', ['clean'], function () {
-  startExpress();
-  startLivereload();
-  gulp.watch('app/*.html', notifyLivereload);
-  gulp.start('images', 'scripts', 'scripts-vendor', 'copy', 'sass', 'watch');
+gulp.task('styles:vendor', function() {
+  gulp
+    .src(config.vendor.css)
+    .pipe(plugins.concat('vendor.css'))
+    .pipe(plugins.rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./dist/css/'));
 });
+
+// Styles task (sass - .scss format)
+gulp.task('styles', ['styles:vendor'], function() {
+  gulp
+    .src('app/styles/*.scss')
+     // The onerror handler prevents Gulp from crashing when you make a mistake in your SASS
+    .pipe(plugins.sass({
+      onError: function (e) {
+        console.log(e);
+      },
+      sourceMap: 'sass',
+      sourceComments: 'map',
+      precision: 10,
+    }))
+    .pipe(plugins.autoprefixer("last 2 versions", "> 1%", "ie 8", {
+      map: false
+    }))
+    .pipe(gulp.dest('./dist/css/'));
+});
+
+//
+// Don't include this in watch tasks.
+// It is a standalone task.
+//
+gulp.task('clean:bower', function() {
+  gulp
+    .src('vendor/', { read: false })
+    .pipe(plugins.clean());
+});
+
+gulp.task('watch', function() {
+  gulp.watch('app/**/*.js', ['js']);
+  gulp.watch('app/**/*.scss', ['styles']);
+  gulp.watch('app/**/*.jade', ['copy']);
+});
+
+gulp.task('copy', ['copy:assets', 'copy:jade']);
+gulp.task('js', ['js:app', 'js:vendor', 'js:lint']);
+gulp.task('default', ['clean', 'copy', 'styles', 'js', 'watch']);

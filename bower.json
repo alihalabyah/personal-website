@@ -2,8 +2,14 @@
   "name": "personal-site",
   "version": "0.0.0",
   "dependencies": {
-    "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "modernizr": "~2.8.3",
+    "jquery": "~1.10.2",
+    "normalize-css": "~3.0.2",
+    "wordyswitch": "ConnorAtherton/WordySwitch",
+    "jquery-waypoints": "~2.0.5"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "modernizr": "~2.8.3"
+  }
 }

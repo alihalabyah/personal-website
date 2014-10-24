@@ -1,12 +1,16 @@
 var http = require('http');
+var path = require('path');
 var express = require('express');
+var compress = require('compression');
 var app = express();
 
 //
 // Middleware
 //
-app.use(express.compress());
+app.use(compress());
 app.use(express.static(__dirname + '/dist'));
+app.set('views', path.join(__dirname, '/dist/views'));
+app.set('view engine', 'jade');
 
 //
 // Routes for individual files (that aren't html)
@@ -16,23 +20,25 @@ app.get('/cv', function(req,res) { res.sendfile('./dist/cv.pdf'); });
 //
 // Different html routes
 //
-app.get('/terminal', function(req,res) { res.sendfile('./dist/terminal.html'); });
-app.get('/I-said-hey', function(req, res) { res.sendfile('./dist/heman.html'); });
-app.get('/pretty-rain', function(req, res) { res.sendfile('./dist/rainfall.html'); });
-app.get('/vim-cheatsheet', function(req, res) { res.sendfile('./dist/vim.html'); });
-app.get('/typewriter', function(req, res) { res.sendfile('./dist/typewriter.html'); });
-app.get('/mother', function(req, res) { res.sendfile('./dist/mother.html'); });
-app.get('/animate', function(req, res) { res.sendfile('./dist/animate.html'); });
+app.get('/terminal',       function(req, res) { res.render('terminal');   });
+app.get('/I-said-hey',     function(req, res) { res.render('heman');      });
+app.get('/pretty-rain',    function(req, res) { res.render('rainfall');   });
+app.get('/vim-cheatsheet', function(req, res) { res.render('vim');        });
+app.get('/typewriter',     function(req, res) { res.render('typewriter'); });
+app.get('/animate',        function(req, res) { res.render('animate');    });
+app.get('/walkway',        function(req, res) { res.render('walkway');    });
+
 
 //
 // The 404 Route (ALWAYS Keep this as the last route)
+// Serves index route
 //
 app.get('*', function(req, res){
-  res.sendfile('./dist/index.html');
+  res.render('index');
 });
 
 //
 // Create the server
 //
-http.createServer(app).listen(process.env.PORT || 3000);
-console.log('Listening on port 3000');
+http.createServer(app).listen(process.env.PORT || 9000);
+console.log('Listening on port 9000');

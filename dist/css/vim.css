@@ -1,0 +1,95 @@
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+/* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+button {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 22, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #eee;
+  color: #4d4d4d;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+/* line 36, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+#container {
+  width: 90%;
+  max-width: 650px;
+  margin: 50px auto;
+  padding-bottom: 2px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+/* line 46, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+#container > section {
+  margin-top: 50px; }
+
+/* line 51, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.commands {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  position: relative;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 100px 0 rgba(0, 0, 0, 0.15); }
+
+/* line 61, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.command {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc; }
+
+/* line 68, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.command:last-child {
+  border-bottom: none; }
+
+/* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.keystroke {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-family: Inconsolata, Helvetica, Arial; }
+
+/* line 81, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.description {
+  display: inline-block;
+  padding-left: 15px; }
+
+/* line 87, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+#container > section:last {
+  border-radius: 4px; }
+
+/*
+*
+* Sharing is caring
+*
+*/
+/* line 97, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+header {
+  position: relative; }
+
+/* line 102, /Users/Connor/Repos/personal/personal-website/app/styles/vim.scss */
+.sharing.is.caring {
+  position: absolute;
+  top: 0;
+  right: 0; }
+

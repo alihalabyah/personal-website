@@ -1,0 +1,13 @@
+{
+  "name": "wordyswitch",
+  "homepage": "https://github.com/ConnorAtherton/WordySwitch",
+  "_release": "6849f95dc0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6849f95dc0d514bd3e6285ca2308812a9e5f35e1"
+  },
+  "_source": "git://github.com/ConnorAtherton/WordySwitch.git",
+  "_target": "*",
+  "_originalSource": "ConnorAtherton/WordySwitch"
+}
