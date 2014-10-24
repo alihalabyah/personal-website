@@ -145,13 +145,13 @@ pre[class*="language-"] {
   transition: all 250ms ease-out 1s; }
   /* line 45, /Users/Connor/Repos/personal/personal-website/app/styles/typewriter.scss */
   .content .example {
-    margin: 120px 0; }
+    margin: 90px 0; }
 
 /* line 50, /Users/Connor/Repos/personal/personal-website/app/styles/typewriter.scss */
 .typewriter {
   font-family: 'Cutive Mono';
   font-size: 24px;
-  min-height: 26px;
+  min-height: 70px;
   color: #1c1c1c; }
 
 /* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/typewriter.scss */
