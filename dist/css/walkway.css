@@ -1,0 +1,41 @@
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+#walkway {
+  width: 100%;
+  height: 100%;
+  background-color: #f39c12;
+  font-family: 'Lato', 'serif'; }
+  /* line 11, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway .half {
+    width: 50%;
+    height: 100%;
+    float: left; }
+  /* line 17, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway .explain {
+    position: relative;
+    padding: 0 100px 0 40px;
+    max-width: 600px;
+    color: white; }
+    /* line 23, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    #walkway .explain h1 {
+      font-size: 2.8em;
+      font-weight: 700; }
+      /* line 27, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+      #walkway .explain h1 > span {
+        font-weight: 300; }
+    /* line 32, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    #walkway .explain p {
+      font-size: 1.2em;
+      line-height: 1.4em; }
+  /* line 38, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway .center, #walkway svg {
+    position: relative;
+    height: auto;
+    top: 45%;
+    -webkit-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+        transform: translateY(-70%); }
+

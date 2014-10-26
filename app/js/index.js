@@ -14,24 +14,24 @@ $(function() {
 
   $projects.each(function(i) {
     // stagger the animations 0.25 seconds apart
-    delay = (((i + 3) / 4) - 0.5);
+    delay = (((i + 3) / 4) - 0.6);
 
     css = ' animation-delay: ' + delay + 's; -webkit-animation-delay: 0s,' + delay + 's; -moz-animation-delay: ' + delay + 's; -o-animation-delay: ' + delay + 's;';
     $(this).attr("style", css);
   });
 
   $(".projects h2").each(function(i) {
-    var hue = color + (i * 13);
+    var hue = color + (i * 8);
 
     if(i === 0 || i === $projects.length - 1) {
       i === 0 ? first = hue : last = hue;
     }
 
-    css = 'background: hsl(' + hue + ',95%,65%); color:hsl(' + hue + ',65%,55%);';
+    css = 'background: hsla(' + hue + ',95%,65%,0.95); color:hsla(' + hue + ',65%,55%,0.9);';
     $(this).attr("style", css);
   });
 
-  css = 'background: linear-gradient(90deg, hsl(' + first + ',65%,65%), hsl(' + last + ',65%,65%)) hsl(' + first + ',65%,65%) repeat;';
+  css = 'background: linear-gradient(105deg, hsla(' + first + ',65%,65%,0.6), hsla(' + last + ',65%,65%,0.6)) hsla(' + first + ',65%,65%,0.6) repeat;';
   $topborder.attr("style", css);
 
   $('.wordy').WordySwitch({

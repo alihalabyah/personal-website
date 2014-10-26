@@ -13,9 +13,9 @@ app.set('views', path.join(__dirname, '/dist/views'));
 app.set('view engine', 'jade');
 
 //
-// Routes for individual files (that aren't html)
+// Routes for individual files
 //
-app.get('/cv', function(req,res) { res.sendfile('./dist/cv.pdf'); });
+app.get('/cv', function(req,res) { res.sendfile('./cv.pdf'); });
 
 //
 // Different html routes
@@ -25,7 +25,6 @@ app.get('/I-said-hey',     function(req, res) { res.render('heman');      });
 app.get('/pretty-rain',    function(req, res) { res.render('rainfall');   });
 app.get('/vim-cheatsheet', function(req, res) { res.render('vim');        });
 app.get('/typewriter',     function(req, res) { res.render('typewriter'); });
-app.get('/animate',        function(req, res) { res.render('animate');    });
 app.get('/walkway',        function(req, res) { res.render('walkway');    });
 
 

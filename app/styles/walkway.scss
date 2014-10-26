@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+#walkway {
+  width: 100%;
+  height: 100%;
+  background-color: #f39c12;
+  font-family: 'Lato', 'serif';
+
+  .half {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+
+  .explain {
+    position: relative;
+    padding: 0 100px 0 40px;
+    max-width: 600px;
+    color: white;
+
+    h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+
+      > span {
+        font-weight: 300;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.4em;
+    }
+  }
+
+  .center {
+    position: relative;
+    height: auto;
+    top: 45%;
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
+
+  svg {
+    @extend .center;
+  }
+}
