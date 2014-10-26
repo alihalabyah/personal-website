@@ -1,41 +1,70 @@
-/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+/* line 3, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
 * {
   box-sizing: border-box; }
 
-/* line 5, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+/* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
 #walkway {
   width: 100%;
   height: 100%;
   background-color: #f39c12;
   font-family: 'Lato', 'serif'; }
-  /* line 11, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 13, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway .half {
     width: 50%;
     height: 100%;
     float: left; }
-  /* line 17, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    @media screen and (max-width: 750px) {
+      #walkway .half {
+        width: 100%;
+        height: 50%;
+        float: none; } }
+  /* line 25, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway .explain {
     position: relative;
     padding: 0 100px 0 40px;
     max-width: 600px;
     color: white; }
-    /* line 23, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    /* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
     #walkway .explain h1 {
       font-size: 2.8em;
       font-weight: 700; }
-      /* line 27, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+      /* line 35, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
       #walkway .explain h1 > span {
         font-weight: 300; }
-    /* line 32, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    /* line 40, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
     #walkway .explain p {
       font-size: 1.2em;
       line-height: 1.4em; }
-  /* line 38, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
-  #walkway .center, #walkway svg {
+    /* line 45, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    #walkway .explain a {
+      border: 1px solid #fff;
+      padding: 6px 11px;
+      color: #fff;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 14px;
+      border: 1px solid #fafafa;
+      text-decoration: none; }
+  /* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway .center, #walkway #svg-wrap {
     position: relative;
     height: auto;
     top: 45%;
     -webkit-transform: translateY(-70%);
     -ms-transform: translateY(-70%);
         transform: translateY(-70%); }
+  /* line 65, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway #svg-wrap {
+    padding: 75px;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  /* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway svg path, #walkway svg line {
+    stroke: #fff;
+    stroke-width: 2px; }
+  /* line 78, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  #walkway svg path {
+    fill: transparent; }
 
