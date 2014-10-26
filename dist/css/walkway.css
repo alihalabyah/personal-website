@@ -24,18 +24,21 @@
     padding: 0 100px 0 40px;
     max-width: 600px;
     color: white; }
-    /* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    @media screen and (max-width: 750px) {
+      #walkway .explain {
+        padding: 0px 30px; } }
+    /* line 35, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
     #walkway .explain h1 {
       font-size: 2.8em;
       font-weight: 700; }
-      /* line 35, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+      /* line 39, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
       #walkway .explain h1 > span {
         font-weight: 300; }
-    /* line 40, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    /* line 44, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
     #walkway .explain p {
       font-size: 1.2em;
       line-height: 1.4em; }
-    /* line 45, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+    /* line 49, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
     #walkway .explain a {
       border: 1px solid #fff;
       padding: 6px 11px;
@@ -45,7 +48,7 @@
       border-radius: 14px;
       border: 1px solid #fafafa;
       text-decoration: none; }
-  /* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 61, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway .center, #walkway #svg-wrap {
     position: relative;
     height: auto;
@@ -53,18 +56,18 @@
     -webkit-transform: translateY(-70%);
     -ms-transform: translateY(-70%);
         transform: translateY(-70%); }
-  /* line 65, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 69, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway #svg-wrap {
     padding: 75px;
     width: 100%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-  /* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 77, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway svg path, #walkway svg line {
     stroke: #fff;
     stroke-width: 2px; }
-  /* line 78, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 82, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway svg path {
     fill: transparent; }
 

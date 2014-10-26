@@ -28,6 +28,10 @@ $breakpoint: 750px;
     max-width: 600px;
     color: white;
 
+    @media screen and (max-width: $breakpoint) {
+      padding: 0px 30px;
+    }
+
     h1 {
       font-size: 2.8em;
       font-weight: 700;
