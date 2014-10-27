@@ -165,7 +165,6 @@ var update = function () {
 }
 
 var init = function (){
-  console.log('init in progress');
   context.lineWidth = dropWidth;
   context.fillStyle = 'rgba(0,0,0,1)';
   context.strokeStyle = 'rgba(0,0,0,1)';

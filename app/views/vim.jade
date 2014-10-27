@@ -1,6 +1,7 @@
 extends ./common/layout
 
 block head
+  link(href='http://fonts.googleapis.com/css?family=Lato:300,700|Cutive+Mono|Inconsolata' rel='stylesheet' type='text/css')
   link(rel="stylesheet" href="css/vim.css")
 
 block content
@@ -29,21 +30,13 @@ block content
           .description
             | Insert text at the start of the current line
         .command
-          .keystroke  0
+          .keystroke  s
           .description
-            | Move cursor to beginning of current line
+            | Delete current letter and enter insert mode
         .command
-          .keystroke  $
+          .keystroke  S
           .description
-            | Move cursor to end of current line
-        .command
-          .keystroke  w
-          .description
-            | Move cursor forward one word
-        .command
-          .keystroke  b
-          .description
-            | Move cursor back one word
+            | Delete current line and enter insert mode
     section
       h2 Command mode
       .commands
@@ -63,4 +56,24 @@ block content
           .keystroke  l
           .description
             | Move cursor right one character
+        .command
+          .keystroke  0
+          .description
+            | Move cursor to beginning of current line
+        .command
+          .keystroke  $
+          .description
+            | Move cursor to end of current line
+        .command
+          .keystroke  w
+          .description
+            | Move cursor forward one word
+        .command
+          .keystroke  b
+          .description
+           | Move cursor back one word
+        .command
+          .keystroke  ^
+          .description
+           | Move to first character in line
     footer

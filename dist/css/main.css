@@ -191,8 +191,8 @@ a {
   .projects h2:hover {
     -webkit-transform: translate3d(6px, -7px, 0);
             transform: translate3d(6px, -7px, 0);
-    -webkit-transition: 0.15s;
-            transition: 0.15s; }
+    -webkit-transition: 125ms;
+            transition: 125ms; }
   /* line 62, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2:active {
     -webkit-transform: translate3d(0, 7px, 0);
