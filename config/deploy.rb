@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.3.3'
 
-set :application, 'test.connoratherton.com'
+set :application, 'connoratherton.com'
 
 set :scm, :git
 set :repo_url, 'git@github.com:ConnorAtherton/personal-website.git'

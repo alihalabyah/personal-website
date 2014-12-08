@@ -1,5 +1,5 @@
-role :app, "test.connoratherton.com"
-role :web, "test.connoratherton.com"
+role :app, "connoratherton.com"
+role :web, "connoratherton.com"
 
 # Global options
 # --------------

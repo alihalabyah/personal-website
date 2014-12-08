@@ -22,7 +22,8 @@ namespace :deploy do
       on roles(:app) do
         execute "sudo service nginx #{command}"
         unless command == "stop"
-          execute "cd #{current_path} && forever server.js"
+          # forver start to run a daemon
+          execute "cd #{current_path} && forever start server.js"
         end
       end
     end
