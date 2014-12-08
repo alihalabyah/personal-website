@@ -5,6 +5,7 @@
   "dependencies": {
     "compression": "^1.2.0",
     "express": "~4.0.0",
+    "forever": "^0.13.0",
     "jade": "^1.7.0"
   },
   "devDependencies": {
