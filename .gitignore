@@ -4,6 +4,7 @@ node_modules
 app/bower_components
 /bower
 npm-debug.log
+/config/nginx.conf
 .DS_Store
 */.DS_Store
 /**/*.swp

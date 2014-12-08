@@ -11,21 +11,21 @@ namespace :deploy do
 
   desc "Installs all dependencies"
   task :install_deps do
-    run "npm install && npm update"
+    on roles(:app) do
+      execute "cd #{current_path} && npm install"
+    end
   end
 
   %w[start stop restart].each do |command|
     desc "#{command} nginx."
     task command do
       on roles(:app) do
-        execute "#{try_sudo} service nginx #{command}"
+        execute "sudo service nginx #{command}"
+        unless command == "stop"
+          execute "cd #{current_path} && forever server.js"
+        end
       end
     end
   end
 
-  before :deploy,   "deploy:check_revision"
-  before :deploy,   "setup:symlink_config"
-  after  :deploy,   "deploy:install_deps"
-  after  :deploy,   "deploy:restart"
-  after  :rollback, "deploy:restart"
 end

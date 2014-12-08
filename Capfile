@@ -7,3 +7,5 @@ require 'capistrano/deploy'
 # Troubleshoot connection problems
 require 'capistrano/ssh_doctor'
 
+# Load all tasks
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }

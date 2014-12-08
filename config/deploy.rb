@@ -17,4 +17,11 @@ set :format, :pretty
 set :log_level, :debug
 set :keep_releases, 3
 
-Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
+namespace :deploy do
+  before :deploy,   "deploy:check_revision"
+  after  :deploy,   "deploy:install_deps"
+  after  :deploy,   "setup:symlink_config"
+  after  :deploy,   "deploy:restart"
+  after  :rollback, "deploy:restart"
+end
+
