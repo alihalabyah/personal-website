@@ -8,4 +8,3 @@ set :ssh_options, {
   keys: %w{"~/.ssh/google_compute_engine" "~/.ssh/id_rsa"},
   forward_agent: true
 }
-

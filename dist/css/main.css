@@ -166,65 +166,69 @@ a {
   color: #302c29; }
 
 /* line 24, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+.wordy {
+  padding-left: 10px; }
+
+/* line 28, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
 .top-border {
   position: relative;
   height: 6px;
   width: 100%;
   z-index: 5; }
 
-/* line 32, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+/* line 36, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
 .projects {
   opacity: 0; }
-  /* line 40, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 44, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects .project {
     position: relative;
     -webkit-animation: bounceInLeft ease-in 0.8s backwards;
             animation: bounceInLeft ease-in 0.8s backwards; }
-  /* line 48, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 52, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
     display: inline-block;
     margin: 0 0 0 -7px;
     -webkit-transition: 0.5s;
             transition: 0.5s;
     box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px; }
-  /* line 56, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 60, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2:hover {
     -webkit-transform: translate3d(6px, -7px, 0);
             transform: translate3d(6px, -7px, 0);
     -webkit-transition: 125ms;
             transition: 125ms; }
-  /* line 62, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 66, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2:active {
     -webkit-transform: translate3d(0, 7px, 0);
             transform: translate3d(0, 7px, 0);
     -webkit-transition: 0.1s;
             transition: 0.1s; }
-  /* line 68, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 72, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     display: block;
     margin-left: 9.5em;
     text-decoration: none;
     padding: 1.5em; }
 
-/* line 77, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+/* line 81, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
 .ready .projects {
   opacity: 1; }
 
-/* line 82, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+/* line 86, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
 footer {
   padding: 1.5em; }
 
 @media (max-width: 67em) {
-  /* line 90, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 94, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .tags {
     display: inline-block;
     position: absolute; }
 
-  /* line 96, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 100, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .tags .tag:first-child {
     margin-top: 1em; }
 
-  /* line 101, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 105, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .tag {
     display: block;
     padding: 0.5em 0.6em 0.5em 1.2em;
@@ -233,60 +237,60 @@ footer {
  }
 
 @media (max-width: 49em) {
-  /* line 115, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 119, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     margin-left: 7em;
     padding: 1.3em; }
-  /* line 121, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 125, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
     font-size: 1.5em; }
-  /* line 126, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 130, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects .tags {
     display: none; }
  }
 
 @media (max-width: 35em) {
-  /* line 137, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 141, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   header {
     padding: 30px 20px; }
-    /* line 140, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+    /* line 144, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
     header p {
       font-size: 40px; }
-    /* line 144, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+    /* line 148, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
     header h1 {
       font-size: 45px; }
-    /* line 148, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+    /* line 152, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
     header h2 {
       font-size: 20px; }
 
-  /* line 155, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 159, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     margin-left: 7em;
     padding: 1em; }
-  /* line 161, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 165, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
     font-size: 1.3em; }
  }
 
 @media (max-width: 25em) {
-  /* line 176, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 180, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     margin-left: 1em;
     padding: 1em; }
-  /* line 182, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 186, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
     font-size: 1.3em; }
  }
 
 @media (min-width: 85em) {
-  /* line 196, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 200, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h4 {
     font-size: 1.1em; }
-  /* line 201, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 205, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     margin-left: 17em;
     padding: 1.3em; }
-  /* line 207, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  /* line 211, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
     font-size: 1.7em; }
  }
