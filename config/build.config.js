@@ -15,7 +15,7 @@ module.exports = {
     js: [
       './bower/modernizr/modernizr.js',
       './bower/wordyswitch/src/wordyswitch.js',
-      './bower/typewriter/TypeWriter.js',
+      './bower/typewriter/TypeWriter.min.js',
       './bower/walkway/src/walkway.js',
       './bower/jquery-waypoints/waypoints.js'
     ],
