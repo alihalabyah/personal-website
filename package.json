@@ -26,7 +26,6 @@
     "gulp-sass": "^1.2.0",
     "gulp-uglify": "~0.2.0",
     "gulp-util": "~2.2.13",
-    "jade": "^1.7.0",
     "jshint-stylish": "~0.1.5"
   },
   "engines": {

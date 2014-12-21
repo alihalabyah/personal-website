@@ -15,7 +15,7 @@ app.set('view engine', 'jade');
 //
 // Routes for individual files
 //
-app.get('/cv', function(req,res) { res.sendfile('./cv.pdf'); });
+app.get('/cv',             function(req, res) { res.sendfile('./cv.pdf');  });
 
 //
 // Different html routes

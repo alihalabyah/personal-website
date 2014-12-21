@@ -11,14 +11,14 @@ GEM
     capistrano-stats (1.0.3)
     capistrano_rsync_with_remote_cache (2.4.0)
       capistrano (>= 2.1.0)
-    colorize (0.7.3)
-    i18n (0.6.11)
+    colorize (0.7.5)
+    i18n (0.7.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
     rake (10.4.2)
-    sshkit (1.5.1)
-      colorize
+    sshkit (1.6.1)
+      colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
 
@@ -26,6 +26,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano (~> 3.x.x)
+  capistrano (= 3.3.3)
   capistrano-ssh-doctor (~> 1.0)
   capistrano_rsync_with_remote_cache
