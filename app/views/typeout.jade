@@ -1,0 +1,25 @@
+extends ./common/layout
+
+block head
+  link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,300' rel='stylesheet' type='text/css')
+  link(rel="stylesheet", href="/css/typeout.css")
+
+block content
+  #demo
+    <h1>San Francisco is <span class="typeout">amazing</span></h1>
+    small
+      | Tiny delightful experiences matter.
+      | If you agree, please consider starring on
+      a(href="https://github.com/ConnorAtherton/typeout")  Github
+
+  script(src="/js/vendor/typeout.min.js")
+  script.
+    var small = document.querySelector('small');
+
+    typeout('.typeout', ['wonderful', 'eye-opening', '..different', 'an experience'], {
+      numLoops: 1,
+      callback: function(el) {
+        el.innerHTML += ".";
+        small.style['opacity'] = 1;
+      }
+    });

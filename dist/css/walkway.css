@@ -45,10 +45,17 @@
       color: #fff;
       height: 24px;
       line-height: 24px;
-      border-radius: 14px;
+      border-radius: 10px;
       border: 1px solid #fafafa;
-      text-decoration: none; }
-  /* line 61, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+      text-decoration: none;
+      -webkit-transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1);
+              transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1); }
+      /* line 60, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+      #walkway .explain a:hover {
+        border-radius: 20px;
+        color: #e6e6e6;
+        border-color: #e6e6e6; }
+  /* line 68, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway .center, #walkway #svg-wrap {
     position: relative;
     height: auto;
@@ -56,18 +63,18 @@
     -webkit-transform: translateY(-70%);
     -ms-transform: translateY(-70%);
         transform: translateY(-70%); }
-  /* line 69, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 76, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway #svg-wrap {
     padding: 75px;
     width: 100%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-  /* line 77, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 84, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway svg path, #walkway svg line {
     stroke: #fff;
     stroke-width: 2px; }
-  /* line 82, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
+  /* line 89, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
   #walkway svg path {
     fill: transparent; }
 

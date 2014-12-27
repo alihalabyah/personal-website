@@ -52,9 +52,16 @@ $breakpoint: 750px;
       color: #fff;
       height: 24px;
       line-height: 24px;
-      border-radius: 14px;
+      border-radius: 10px;
       border: 1px solid darken(#fff, 2%);
       text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1);
+
+      &:hover {
+        border-radius: 20px;
+        color: darken(#fff, 10%);
+        border-color: darken(#fff, 10%);
+      }
     }
   }
 

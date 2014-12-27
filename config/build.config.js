@@ -12,13 +12,22 @@ module.exports = {
   // assets (js, css, images) to these arrays
   //
   vendor: {
-    js: [
-      './bower/modernizr/modernizr.js',
-      './bower/wordyswitch/src/wordyswitch.js',
-      './bower/typewriter/TypeWriter.min.js',
-      './bower/walkway/src/walkway.js',
-      './bower/jquery-waypoints/waypoints.js'
-    ],
+    js:  {
+      'all': [
+        './bower/modernizr/modernizr.js',
+        './bower/wordyswitch/src/wordyswitch.js',
+        './bower/typewriter/src/typewriter.js',
+        './bower/walkway/src/walkway.js',
+        './bower/typeout/src/typeout.js',
+        './bower/jquery-waypoints/waypoints.js'
+      ],
+      'typeout': [
+        './bower/typeout/src/typeout.js'
+      ],
+      'walkway': [
+        './bower/walkway/src/walkway.js'
+      ]
+    },
     css: [
       './bower/normalize-css/normalize.css',
     ],

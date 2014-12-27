@@ -6,57 +6,57 @@ block head
 block content
   .top-border
   header
-      p Hey there, I'm
-      h1 Connor Atherton
-      h2
-       | ...and I love
-       em.wordy JavaScript
+    p
+      | Hey
+      span.wordy there
+      | , I'm
+    h1 Connor Atherton
+    h2
+      | also known as
+      span.typeout Conan the barbarian
+
   section.projects
     .project
-      h2
-        a(href='/walkway') Walkway
+      h2: a(href='/typeout') Typeout
       .tags
         h4.tag JavaScript
     .project
-      h2
-        a(href='/typewriter') TypeWriter.js
+      h2: a(href='/walkway') Walkway
       .tags
         h4.tag JavaScript
     .project
-      h2
-        a(href='/vim-cheatsheet') Vim Cheatsheet
+      h2: a(href='/typewriter') TypeWriter.js
+      .tags
+        h4.tag JavaScript
+    .project
+      h2: a(href='/vim-cheatsheet') Vim Cheatsheet
       .tags
         h4.tag Vim
         h4.tag Reference
     .project
-      h2
-        a(href='/pretty-rain') Pretty Rain
+      h2: a(href='/pretty-rain') Pretty Rain
       .tags
         h4.tag JavaScript
         h4.tag Canvas
         h4.tag Playtime
     .project
-      h2
-        a(href='https://github.com/ConnorAtherton/OctoPanel') OctoPanel
+      h2: a(href='https://github.com/ConnorAtherton/OctoPanel') OctoPanel
       .tags
         h4.tag OctoPress
         h4.tag SASS
     .project
-      h2
-        a(href='http://blog.connoratherton.com') Socks Off and Code
+      h2: a(href='http://blog.connoratherton.com') Socks Off and Code
       .tags
         h4.tag OctoPress
         h4.tag Ruby
         h4.tag SASS
     .project
-      h2
-        a(href='https://github.com/ConnorAtherton/Progress') Progress.js
+      h2: a(href='https://github.com/ConnorAtherton/Progress') Progress.js
       .tags
         h4.tag JavaScript
         h4.tag SASS
     .project
-      h2
-        a(href='http://progressjs.com') Progress Website
+      h2: a(href='http://progressjs.com') Progress Website
       .tags
         h4.tag jQuery
         h4.tag Responsive
@@ -64,5 +64,5 @@ block content
   footer
 
   script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-  script(src='/js/vendor.min.js')
+  script(src='/js/vendor/all.min.js')
   script(src='/js/index.min.js')

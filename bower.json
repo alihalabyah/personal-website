@@ -7,7 +7,8 @@
     "wordyswitch": "ConnorAtherton/WordySwitch",
     "walkway": "ConnorAtherton/walkway",
     "typewriter": "ConnorAtherton/typewriter",
-    "jquery-waypoints": "~2.0.5"
+    "jquery-waypoints": "~2.0.5",
+    "typeout": "ConnorAtherton/typeout"
   },
   "devDependencies": {},
   "resolutions": {

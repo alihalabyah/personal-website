@@ -20,7 +20,7 @@ Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(var|let|i
 $(function () {
 
   $('.example-1').waypoint(function () {
-    var tw = new TypeWriter('.example-1-output', {
+    var tw = new Typewriter('.example-1-output', {
       text: 'I love printing text! It\'s a pity my intervals are the same each time. It just does not feel right.',
       interval: 100
     });
@@ -33,7 +33,7 @@ $(function () {
 
 
   $('.example-2').waypoint(function () {
-    var tw = new TypeWriter('.example-2-output', {
+    var tw = new Typewriter('.example-2-output', {
       text: 'I also love printing text. My intervals are randomised to look like a human is typing.',
       interval: 'human'
     });
@@ -46,7 +46,7 @@ $(function () {
 
   // set up waypoint for example 3
   $('.example-3').waypoint(function () {
-    var tw = new TypeWriter('.example-3-output', {
+    var tw = new Typewriter('.example-3-output', {
       text: 'I LOVE PRINTING THE MOST!',
       interval: '500',
       words: true
@@ -59,7 +59,7 @@ $(function () {
   });
 
   $('.example-4').waypoint(function () {
-    var tw = new TypeWriter('.example-4-output', {
+    var tw = new Typewriter('.example-4-output', {
       text: 'Woah! So glad this is the last example I have to sit through. I do like customisation though.',
       interval: 'human',
       lowerBound: 30,

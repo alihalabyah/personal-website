@@ -61,18 +61,18 @@ block content
           pre
             code.language-javascript
               | var tw = new TypeWriter('selector', {
-              |   text: 'The text to write into the selector',
+              |   text: 'Text', // Required.
               |   words: false, // Optional. Defaults to false.
-              |   interval: 'human' || 300, // Optional. Defaults to human.
-              |   lowerBound: 30 || null, // Optional. Defaults to 30ms
-              |   upperBound: 200 || null // Optional. Defaults to 200ms
+              |   interval: 'human', // Optional. Defaults to human.
+              |   lowerBound: 30, // Optional. Defaults to 30ms
+              |   upperBound: 200 // Optional. Defaults to 200ms
               | });
 
       footer
-        | Code is all on 
-        a(href='https://github.com/ConnorAtherton/TypeWriter') GitHub
+        | Code is all on
+        a(href='https://github.com/ConnorAtherton/TypeWriter')  GitHub
         |. Go check it out.
 
   script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-  script(src='js/vendor.min.js')
-  script(src='js/typewriterPage.min.js')
+  script(src='/js/vendor/all.min.js')
+  script(src='/js/typewriter.min.js')

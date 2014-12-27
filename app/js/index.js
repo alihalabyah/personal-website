@@ -35,8 +35,12 @@ $(function() {
   $topborder.attr("style", css);
 
   $('.wordy').WordySwitch({
-    words: ['football', 'Rubix cubes', 'flapjacks', 'my Mac', 'stationary', 'iTerm']
+    words: ['you', 'there', 'stranger', 'friend', 'fellow human'],
+    normalSpeed: 5000
   });
+
+  // typeout
+  typeout('.typeout', ['brother', 'man', 'human'])
 
 });
 

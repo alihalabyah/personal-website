@@ -26,6 +26,7 @@ app.get('/pretty-rain',    function(req, res) { res.render('rainfall');   });
 app.get('/vim-cheatsheet', function(req, res) { res.render('vim');        });
 app.get('/typewriter',     function(req, res) { res.render('typewriter'); });
 app.get('/walkway',        function(req, res) { res.render('walkway');    });
+app.get('/typeout',        function(req, res) { res.render('typeout');    });
 
 
 //

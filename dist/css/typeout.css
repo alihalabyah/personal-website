@@ -1,0 +1,75 @@
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+html, body {
+  font-family: 'Source Sans Pro';
+  font-size: 25px;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+/* line 8, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+#demo {
+  position: relative;
+  height: auto;
+  top: 40%;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight: 300; }
+  /* line 16, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  #demo small {
+    letter-spacing: normal;
+    color: #babfc6;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0;
+    -webkit-transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1);
+            transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1); }
+    /* line 24, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+    #demo small a {
+      color: #828c97;
+      text-decoration: none;
+      font-weight: 600; }
+
+/* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+.typeout {
+  color: #65d165; }
+
+/* line 34, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+.typeout:after {
+  -webkit-animation: 0.7s blink step-end infinite;
+  -ms-animation: 0.7s blink step-end infinite;
+  animation: 0.7s blink step-end infinite;
+  content: '|';
+  padding-left: 2px; }
+
+/* line 43, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+.typeout.typeout-complete:after {
+  content: none; }
+
+@keyframes "blink" {
+  /* line 47, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 50, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  50% {
+    opacity: 1; } }
+
+@-webkit-keyframes "blink" {
+  /* line 63, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 66, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  50% {
+    opacity: 1; } }
+
+@-ms-keyframes "blink" {
+  /* line 71, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 74, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  50% {
+    opacity: 1; } }
+

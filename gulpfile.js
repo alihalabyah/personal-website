@@ -37,12 +37,16 @@ gulp.task('js:app', function () {
 });
 
 gulp.task('js:vendor', function() {
-  gulp
-    .src(config.vendor.js)
-    .pipe(plugins.uglify())
-    .pipe(plugins.concat('vendor.js'))
-    .pipe(plugins.rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./dist/js/'));
+  var files = Object.keys(config.vendor.js);
+
+  files.forEach(function(file) {
+    gulp
+      .src(config.vendor.js[file])
+      .pipe(plugins.uglify())
+      .pipe(plugins.concat(file + '.js'))
+      .pipe(plugins.rename({ suffix: '.min' }))
+      .pipe(gulp.dest('./dist/js/vendor/'));
+  });
 });
 
 gulp.task('styles:vendor', function() {
