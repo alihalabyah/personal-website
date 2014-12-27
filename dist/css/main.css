@@ -295,3 +295,47 @@ footer {
     font-size: 1.7em; }
  }
 
+/* line 218, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+.typeout {
+  color: #65d165;
+  padding-left: 6px; }
+
+/* line 223, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+.typeout:after {
+  -webkit-animation: 0.7s blink step-end infinite;
+  -ms-animation: 0.7s blink step-end infinite;
+  animation: 0.7s blink step-end infinite;
+  content: '|';
+  padding-left: 2px; }
+
+/* line 232, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+.typeout.typeout-complete:after {
+  content: none; }
+
+@keyframes "blink" {
+  /* line 236, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 239, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  50% {
+    opacity: 1; } }
+
+@-webkit-keyframes "blink" {
+  /* line 252, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 255, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  50% {
+    opacity: 1; } }
+
+@-ms-keyframes "blink" {
+  /* line 260, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  from, to {
+    opacity: 0; }
+
+  /* line 263, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
+  50% {
+    opacity: 1; } }
+

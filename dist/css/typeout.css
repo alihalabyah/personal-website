@@ -12,10 +12,12 @@ html, body {
   position: relative;
   height: auto;
   top: 40%;
-  text-align: center;
-  letter-spacing: -1px;
-  font-weight: 300; }
-  /* line 16, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  text-align: center; }
+  /* line 14, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  #demo h1 {
+    letter-spacing: -1px;
+    font-weight: 300; }
+  /* line 19, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   #demo small {
     letter-spacing: normal;
     color: #babfc6;
@@ -24,17 +26,20 @@ html, body {
     opacity: 0;
     -webkit-transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1);
             transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1); }
-    /* line 24, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+    /* line 27, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
     #demo small a {
       color: #828c97;
       text-decoration: none;
       font-weight: 600; }
+      /* line 32, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+      #demo small a:hover {
+        color: #65d165; }
 
-/* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+/* line 38, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
 .typeout {
   color: #65d165; }
 
-/* line 34, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+/* line 41, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
 .typeout:after {
   -webkit-animation: 0.7s blink step-end infinite;
   -ms-animation: 0.7s blink step-end infinite;
@@ -42,34 +47,34 @@ html, body {
   content: '|';
   padding-left: 2px; }
 
-/* line 43, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+/* line 50, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
 .typeout.typeout-complete:after {
   content: none; }
 
 @keyframes "blink" {
-  /* line 47, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 54, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   from, to {
     opacity: 0; }
 
-  /* line 50, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   50% {
     opacity: 1; } }
 
 @-webkit-keyframes "blink" {
-  /* line 63, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 70, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   from, to {
     opacity: 0; }
 
-  /* line 66, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   50% {
     opacity: 1; } }
 
 @-ms-keyframes "blink" {
-  /* line 71, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 78, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   from, to {
     opacity: 0; }
 
-  /* line 74, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
+  /* line 81, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
   50% {
     opacity: 1; } }
 

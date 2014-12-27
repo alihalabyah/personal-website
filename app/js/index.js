@@ -40,7 +40,13 @@ $(function() {
   });
 
   // typeout
-  typeout('.typeout', ['brother', 'man', 'human'])
+  typeout('.typeout', ['live in San Francisco', 'work at Bitnami', 'like football', 'make cool things for the web'], {
+    numLoops:1,
+    callback: function(el) {
+      this.el.innerHTML += '.';
+    },
+    interval: 6000
+  })
 
 });
 

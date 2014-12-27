@@ -1,6 +1,7 @@
 node_modules
 .tmp
 .sass-cache
+.capistrano
 app/bower_components
 /bower
 npm-debug.log
