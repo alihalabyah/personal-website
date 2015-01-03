@@ -18,11 +18,11 @@ module.exports = {
         './bower/wordyswitch/src/wordyswitch.js',
         './bower/typewriter/src/typewriter.js',
         './bower/walkway/src/walkway.js',
-        './bower/typeout/src/typeout.js',
+        './bower/typeout/typeout.min.js',
         './bower/jquery-waypoints/waypoints.js'
       ],
       'typeout': [
-        './bower/typeout/src/typeout.js'
+        './bower/typeout/typeout.min.js'
       ],
       'walkway': [
         './bower/walkway/src/walkway.js'
