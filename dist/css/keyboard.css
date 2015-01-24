@@ -1,0 +1,105 @@
+/* line 3, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9; }
+
+/* line 11, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+#intro {
+  width: 95%;
+  margin: 3rem auto;
+  max-width: 500px; }
+  /* line 16, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+  #intro h1 {
+    font-weight: 500; }
+    /* line 18, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    #intro h1 span {
+      font-weight: 700;
+      margin-right: 0.1em; }
+  /* line 24, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+  #intro p {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    font-family: Georgia, serif;
+    color: #141414; }
+
+/* line 32, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+.keyboard {
+  font-size: 14px;
+  line-height: 20px;
+  cursor: default;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  /* line 41, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+  .keyboard .key {
+    -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 1.5rem; }
+    /* line 45, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key i {
+      border: 1px solid red;
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      display: inline-block;
+      border-radius: 3px;
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      color: #606060; }
+    /* line 59, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key span {
+      opacity: 0;
+      font-style: italic;
+      padding-right: 0.5rem;
+      color: #939393; }
+    /* line 66, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key.key-w {
+      -webkit-transform: translate(2rem, 0px);
+          -ms-transform: translate(2rem, 0px);
+              transform: translate(2rem, 0px); }
+    /* line 70, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key.key-a {
+      -webkit-transform: translate(0rem, 0.5rem);
+          -ms-transform: translate(0rem, 0.5rem);
+              transform: translate(0rem, 0.5rem); }
+    /* line 74, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key.key-s {
+      -webkit-transform: translate(2rem, -1rem);
+          -ms-transform: translate(2rem, -1rem);
+              transform: translate(2rem, -1rem); }
+    /* line 78, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard .key.key-d {
+      -webkit-transform: translate(4rem, -2.5rem);
+          -ms-transform: translate(4rem, -2.5rem);
+              transform: translate(4rem, -2.5rem); }
+  /* line 85, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+  .keyboard:hover .key {
+    margin-bottom: 0.75rem;
+    height: auto; }
+    /* line 89, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard:hover .key i {
+      border: 1px solid black;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+      border: 1px solid lightgray;
+      margin-right: 0.6rem; }
+    /* line 98, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+    .keyboard:hover .key span {
+      opacity: 1;
+      -webkit-transition: opacity 100ms ease-in;
+              transition: opacity 100ms ease-in; }
+  /* line 104, /Users/Connor/Repos/personal/personal-website/app/styles/keyboard.scss */
+  .keyboard:hover [class*='key-'] {
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+

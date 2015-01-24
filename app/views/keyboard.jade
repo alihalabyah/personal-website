@@ -1,0 +1,32 @@
+extends ./common/layout
+
+block head
+  link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,300' rel='stylesheet' type='text/css')
+  link(rel="stylesheet", href="/css/keyboard.css")
+
+block content
+  #intro
+    h1
+      span WASD
+      | keys
+    p.
+      Hover over the keys below to see the effect.
+
+    p.
+      The main use case would be for games.
+      But I could also see this being used in rich client side applications to showcase
+      available key bindings.
+  .keyboard
+    .key.key-w
+      i W
+      span Forward
+    .key.key-a
+      i A
+      span Left
+    .key.key-s
+      i S
+      span Back
+    .key.key-d
+      i D
+      span Right
+
