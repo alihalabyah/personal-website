@@ -1,0 +1,38 @@
+extends ./common/layout
+
+block head
+  link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,300' rel='stylesheet' type='text/css')
+  link(rel="stylesheet", href="/css/nav-demo.css")
+
+block content
+  nav
+    a(href="#") About
+    a(href="#") Contact
+    a(href="#") How it works
+    a(href="#") Jobs
+
+  #main-content
+    h1 Click me
+
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script.
+    var $target = $('h1');
+    var close = $('#main-content');
+    var open = false;
+
+    $target.on('click', function(e) {
+      if (!open) {
+        e.stopPropagation();
+        $('body').addClass('nav-open');
+        open = !open;
+      }
+    });
+
+    close.on('click', function(e) {
+      e.stopPropagation();
+      if (!open) return;
+      $('body').removeClass('nav-open');
+      open = !open;
+    });
+
+
