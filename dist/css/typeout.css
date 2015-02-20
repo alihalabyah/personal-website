@@ -24,8 +24,7 @@ html, body {
     font-size: 16px;
     font-weight: 300;
     opacity: 0;
-    -webkit-transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1);
-            transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1); }
+    transition: all 0.85s cubic-bezier(0.5, -0.035, 0.24, 1); }
     /* line 27, /Users/Connor/Repos/personal/personal-website/app/styles/typeout.scss */
     #demo small a {
       color: #828c97;

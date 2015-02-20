@@ -1,117 +1,116 @@
-/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 body {
   font-family: 'Raleway', serif; }
 
-/* line 5, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 5, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
 
-/* line 11, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 11, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 .projects h1, .projects h2 {
   text-transform: uppercase; }
 
-/* line 17, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 17, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 .wordy {
   display: inline-block;
   border-bottom: 1px white dashed; }
 
-/* line 22, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 22, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 .wordy:hover {
   cursor: pointer; }
 
-/* line 26, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 26, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 h1 {
   font-size: 1.9em; }
 
-/* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/partials/typography.scss */
+/* line 31, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_typography.scss */
 h2 {
   font-size: 1.7em; }
 
 @-webkit-keyframes fadeInDownBig {
-  /* line 2, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 2, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px); }
 
-  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
 @keyframes fadeInDownBig {
-  /* line 2, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 2, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px); }
 
-  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
 @keyframes bounceInLeft {
-  /* line 14, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 14, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
             transform: translateX(-2000px); }
 
-  /* line 19, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 19, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
 @-webkit-keyframes bounceInLeft {
-  /* line 25, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 25, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px); }
 
-  /* line 30, /Users/Connor/Repos/personal/personal-website/app/styles/partials/animations.scss */
+  /* line 30, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_animations.scss */
   100% {
     -webkit-transform: translateX(0); } }
 
-/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 header a:hover {
-  -webkit-transition: all 0.1s linear;
-          transition: all 0.1s linear;
+  transition: all .1s linear;
   text-decoration: underline; }
 
-/* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 .github {
   color: #569e3d; }
 
-/* line 12, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 12, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 header .github:hover {
   color: #6dbc52; }
 
-/* line 18, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 18, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 .twitter {
   color: #0271bf; }
 
-/* line 23, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 23, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 header .twitter:hover {
   color: #038ff1; }
 
-/* line 28, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 28, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 .linkedin {
   color: #4875B4; }
 
-/* line 33, /Users/Connor/Repos/personal/personal-website/app/styles/partials/anchors.scss */
+/* line 33, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_anchors.scss */
 header .linkedin:hover {
   color: #6b90c4; }
 
-/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/tags.scss */
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_tags.scss */
 .tags {
   display: inline-block;
   position: relative;
   margin-left: 3em; }
 
-/* line 8, /Users/Connor/Repos/personal/personal-website/app/styles/partials/tags.scss */
+/* line 8, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_tags.scss */
 .tag {
   position: relative !important;
   display: inline-block;
@@ -122,29 +121,29 @@ header .linkedin:hover {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/header.scss */
+/* line 1, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_header.scss */
 header {
   padding: 75px 50px;
   text-align: left;
   width: 100%;
   position: relative; }
-  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/header.scss */
+  /* line 7, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_header.scss */
   header p, header h1, header h2 {
     position: relative;
     z-index: 99; }
-  /* line 12, /Users/Connor/Repos/personal/personal-website/app/styles/partials/header.scss */
+  /* line 12, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_header.scss */
   header p {
     font-weight: 200;
     font-size: 55px;
     margin: 0;
     color: #a2a2a2; }
-  /* line 19, /Users/Connor/Repos/personal/personal-website/app/styles/partials/header.scss */
+  /* line 19, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_header.scss */
   header h1 {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 64px;
     margin: 0; }
-  /* line 26, /Users/Connor/Repos/personal/personal-website/app/styles/partials/header.scss */
+  /* line 26, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_header.scss */
   header h2 {
     color: #a2a2a2;
     font-size: 28px;
@@ -188,21 +187,18 @@ a {
   .projects h2 {
     display: inline-block;
     margin: 0 0 0 -7px;
-    -webkit-transition: 0.5s;
-            transition: 0.5s;
+    transition: .5s;
     box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px; }
   /* line 60, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2:hover {
     -webkit-transform: translate3d(6px, -7px, 0);
             transform: translate3d(6px, -7px, 0);
-    -webkit-transition: 125ms;
-            transition: 125ms; }
+    transition: 125ms; }
   /* line 66, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2:active {
     -webkit-transform: translate3d(0, 7px, 0);
             transform: translate3d(0, 7px, 0);
-    -webkit-transition: 0.1s;
-            transition: 0.1s; }
+    transition: .1s; }
   /* line 72, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     display: block;
@@ -223,18 +219,15 @@ footer {
   .tags {
     display: inline-block;
     position: absolute; }
-
   /* line 100, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .tags .tag:first-child {
     margin-top: 1em; }
-
   /* line 105, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .tag {
     display: block;
     padding: 0.5em 0.6em 0.5em 1.2em;
     font-size: 0.8em;
-    margin: 0.3em 0; }
- }
+    margin: 0.3em 0; } }
 
 @media (max-width: 49em) {
   /* line 119, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
@@ -246,8 +239,7 @@ footer {
     font-size: 1.5em; }
   /* line 130, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects .tags {
-    display: none; }
- }
+    display: none; } }
 
 @media (max-width: 35em) {
   /* line 141, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
@@ -262,15 +254,13 @@ footer {
     /* line 152, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
     header h2 {
       font-size: 20px; }
-
   /* line 159, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects a {
     margin-left: 7em;
     padding: 1em; }
   /* line 165, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
-    font-size: 1.3em; }
- }
+    font-size: 1.3em; } }
 
 @media (max-width: 25em) {
   /* line 180, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
@@ -279,8 +269,7 @@ footer {
     padding: 1em; }
   /* line 186, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
-    font-size: 1.3em; }
- }
+    font-size: 1.3em; } }
 
 @media (min-width: 85em) {
   /* line 200, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
@@ -292,8 +281,7 @@ footer {
     padding: 1.3em; }
   /* line 211, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
   .projects h2 {
-    font-size: 1.7em; }
- }
+    font-size: 1.7em; } }
 
 /* line 218, /Users/Connor/Repos/personal/personal-website/app/styles/main.scss */
 .typeout {

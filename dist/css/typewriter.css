@@ -3,7 +3,7 @@
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
-/* line 8, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 8, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 code[class*="language-"], pre[class*="language-"] {
   color: #0F1419;
   text-shadow: 0 1px white;
@@ -20,72 +20,71 @@ code[class*="language-"], pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none; }
 
-/* line 29, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 29, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none; }
 
-/* line 34, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 34, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none; }
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none; }
 
 @media print {
-  /* line 40, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+  /* line 40, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
   code[class*="language-"], pre[class*="language-"] {
-    text-shadow: none; }
- }
+    text-shadow: none; } }
 
 /* Code blocks */
-/* line 46, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 46, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 pre[class*="language-"] {
   padding: 1em;
   overflow: auto; }
 
 /* Inline code */
-/* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 57, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 :not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em; }
+  padding: .1em;
+  border-radius: .3em; }
 
-/* line 65, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 65, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
   color: slategray; }
 
-/* line 69, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 69, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.punctuation {
   color: #999; }
 
-/* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 73, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .namespace {
-  opacity: 0.7; }
+  opacity: .7; }
 
-/* line 82, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 82, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol {
   color: #905; }
 
-/* line 89, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 89, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.selector, .token.attr-name, .token.string, .token.builtin {
   color: #690; }
 
-/* line 98, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 98, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable {
   color: #a67f59;
   background: rgba(255, 255, 255, 0.5); }
 
-/* line 105, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 105, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.atrule, .token.attr-value, .token.keyword {
   color: #07a; }
 
-/* line 111, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 111, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.regex, .token.important {
   color: #e90; }
 
-/* line 115, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 115, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.important {
   font-weight: bold; }
 
-/* line 119, /Users/Connor/Repos/personal/personal-website/app/styles/partials/syntaxHighlighter */
+/* line 119, /Users/Connor/Repos/personal/personal-website/app/styles/partials/_syntaxHighlighter.scss */
 .token.entity {
   cursor: help; }
 
@@ -141,7 +140,6 @@ pre[class*="language-"] {
   width: 95%;
   max-width: 540px;
   font-family: Lato;
-  -webkit-transition: all 250ms ease-out 1s;
   transition: all 250ms ease-out 1s; }
   /* line 45, /Users/Connor/Repos/personal/personal-website/app/styles/typewriter.scss */
   .content .example {

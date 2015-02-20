@@ -48,8 +48,7 @@
       border-radius: 10px;
       border: 1px solid #fafafa;
       text-decoration: none;
-      -webkit-transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1);
-              transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1); }
+      transition: all 0.25s cubic-bezier(0.5, -0.035, 0.24, 1); }
       /* line 60, /Users/Connor/Repos/personal/personal-website/app/styles/walkway.scss */
       #walkway .explain a:hover {
         border-radius: 20px;

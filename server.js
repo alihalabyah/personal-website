@@ -29,6 +29,7 @@ app.get('/walkway',        function(req, res) { res.render('walkway');    });
 app.get('/typeout',        function(req, res) { res.render('typeout');    });
 app.get('/nav-demo',       function(req, res) { res.render('nav-demo');   });
 app.get('/wasd',           function(req, res) { res.render('keyboard');   });
+app.get('/dump',           function(req, res) { res.render('dump');       });
 
 
 //
