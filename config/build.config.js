@@ -30,6 +30,7 @@ module.exports = {
     },
     css: [
       './bower/normalize-css/normalize.css',
+      './bower/loaders.css/loaders.css'
     ],
     assets: [
       '',

@@ -8,7 +8,8 @@
     "walkway": "ConnorAtherton/walkway",
     "typewriter": "ConnorAtherton/typewriter",
     "jquery-waypoints": "~2.0.5",
-    "typeout": "ConnorAtherton/typeout"
+    "typeout": "ConnorAtherton/typeout",
+    "loaders.css": "*"
   },
   "devDependencies": {},
   "resolutions": {
