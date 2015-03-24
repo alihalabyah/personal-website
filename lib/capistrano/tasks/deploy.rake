@@ -24,8 +24,8 @@ namespace :deploy do
         unless command == "stop"
           # kill all forever processes
           # execute "ps aux | grep forever | awk '{print $2}' | xargs kill -9"
-          # forver start to run a daemon
-          execute "cd #{current_path} && forever start server.js"
+          # forver start to run a daemon, append the logs
+          execute "cd #{current_path} && forever start -a server.js --prod"
         end
       end
     end
