@@ -23,7 +23,7 @@ namespace :deploy do
         execute "sudo service nginx #{command}"
         unless command == "stop"
           # kill all forever processes
-          execute "ps aux | grep forever | awk '{print $2}' | xargs kill -9"
+          # execute "ps aux | grep forever | awk '{print $2}' | xargs kill -9"
           # forver start to run a daemon
           execute "cd #{current_path} && forever start server.js"
         end
